@@ -3,51 +3,44 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title><h3>Myndate</h3></ion-title>
+    
   </ion-navbar>
+  
 </ion-header>
 
 <ion-content padding>
-  <h1>MynDate</h1>
-  <div>
-    <p></p>
+  <ion-img width="200" height="80" src="./assets/images/Myndate.png"></ion-img>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
   
   
-    <div class="ui middle center aligned grid">
-      <div class="column">
-        <h2 class="ui violet image header">
+  <ion-card>
+
+    <!-- <ion-card-header>
+      
+    </ion-card-header> -->
   
-          <img src="./assets/images/Only_the_logo.png" class="image">
+    <ion-card-content>
+      New to us? <a href="#">Sign Up</a>
+    </ion-card-content>
   
-          <div class="content">Log-in to your account</div>
-        </h2>
-        <form class="ui large form" #document>
-          <div class="ui stacked segment">
-            <div class="field">
-              <div class="ui left icon input">
-                <i class="user icon"></i> <input [(ngModel)]="userName"
-                  type="text" name="user name" placeholder="User Name">
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui left icon input">
-                <i class="lock icon"></i> <input [(ngModel)]="password"
-                  type="password" name="password" placeholder="Password">
-              </div>
-            </div>
-            <div class="ui fluid large violet submit button" (click)="callLogin()"> Login</div>
-          </div>
-          <!-- <button [routerLink]=" ['/paymentDetails'] ">Home</button> -->
-          <div *ngIf="isLoginNoSuccess" class="ui negative message">
-            <i class="close icon"></i>
-            <div class="header">Invalid Username or Password.</div>
-          </div>
+  </ion-card>
+       
   
-        </form>
+    
   
-      </div>
-    </div>
-  
-  </div>
+ 
   
 </ion-content>
