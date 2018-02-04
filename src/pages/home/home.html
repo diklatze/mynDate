@@ -8,11 +8,46 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>MynDate</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <h1>MynDate</h1>
+  <div>
+    <p></p>
+  
+  
+    <div class="ui middle center aligned grid">
+      <div class="column">
+        <h2 class="ui violet image header">
+  
+          <img src="./assets/images/Only_the_logo.png" class="image">
+  
+          <div class="content">Log-in to your account</div>
+        </h2>
+        <form class="ui large form" #document>
+          <div class="ui stacked segment">
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="user icon"></i> <input [(ngModel)]="userName"
+                  type="text" name="user name" placeholder="User Name">
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="lock icon"></i> <input [(ngModel)]="password"
+                  type="password" name="password" placeholder="Password">
+              </div>
+            </div>
+            <div class="ui fluid large violet submit button" (click)="callLogin()"> Login</div>
+          </div>
+          <!-- <button [routerLink]=" ['/paymentDetails'] ">Home</button> -->
+          <div *ngIf="isLoginNoSuccess" class="ui negative message">
+            <i class="close icon"></i>
+            <div class="header">Invalid Username or Password.</div>
+          </div>
+  
+        </form>
+  
+      </div>
+    </div>
+  
+  </div>
+  
 </ion-content>
