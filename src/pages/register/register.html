@@ -10,8 +10,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-img width="180" height="100" src="./assets/images/Myndate.png" style="background: transparent !important;"></ion-img>
-  <ion-list>
+ <!--> <ion-list>
 
     <ion-item>
       <ion-label floating>Name</ion-label>
@@ -34,9 +33,42 @@
     </ion-item>
   
   </ion-list>
-  <button ion-button small>Submit</button>
+  <button ion-button small>Submit</button><!-->
   
- 
+  <ion-card>
+    <img src="./assets/images/Myndate.png"/>
+    <ion-card-content>
+      <p>
+       Welcome In please insert your details!!!
+      </p>
+      <p>
+        <ion-list>
+
+          <ion-item>
+            <ion-label floating>Name</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+              <ion-label floating>Family Name</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label floating>Email</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+              
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+        
+        </ion-list>
+        <button ion-button small>Submit</button>
+      </p>
+    </ion-card-content>
+  </ion-card>
 
    
  
