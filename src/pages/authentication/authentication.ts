@@ -3,10 +3,10 @@ import { NavController } from 'ionic-angular';
 import { ListPage } from '../list/list';
 
 @Component({
-  selector: 'page-signIn',
-  templateUrl: 'signIn.html'
+  selector: 'page-authentication',
+  templateUrl: 'authentication.html'
 })
-export class SignInPage {
+export class AuthenticationPage {
 
   constructor(public navCtrl: NavController) {
 

@@ -14,6 +14,10 @@ export class RegisterPage {
 
   }
 
+  goToAuthentication(){
+    this.navCtrl.push(AuthenticationPage);
+  }
+
  
 
 }
