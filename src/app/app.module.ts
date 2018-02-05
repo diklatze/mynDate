@@ -8,7 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { RegisterPage } from '../pages/register/register';
 import { SignInPage } from '../pages/signIn/signIn';
 import { AuthenticationPage } from '../pages/authentication/authentication';
-import { AuthenticationSuccessPage } from '../pages/authenticationSucess/authenticationSucess';
+import { AuthenticationSuccessPage } from '../pages/authenticationSucess/authenticationSuccess';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 

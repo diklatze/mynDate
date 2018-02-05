@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ListPage } from '../list/list';
 import { LoadingController } from 'ionic-angular';
+import { AuthenticationSuccessPage } from '../authenticationSucess/authenticationSuccess';
 
 @Component({
   selector: 'page-authentication',
