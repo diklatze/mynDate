@@ -8,6 +8,8 @@ import { ListPage } from '../pages/list/list';
 import { RegisterPage } from '../pages/register/register';
 import { SignInPage } from '../pages/signIn/signIn';
 import { AuthenticationPage } from '../pages/authentication/authentication';
+import { AuthenticationSuccessPage } from '../pages/authenticationSucess/authenticationSucess';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -26,9 +28,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Register', component: RegisterPage },
-      { title: 'SignIn', component: SignInPage },
-      { title: 'Authentication', component: AuthenticationPage }
+      { title: 'Register', component: RegisterPage }
     ];
 
   }

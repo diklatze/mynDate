@@ -17,15 +17,19 @@
       <ion-card-title>
         SMS will be send for Authorization
         </ion-card-title>
-      <p>
-        Here we will send SMS for autherization
-      </p>
+      <ion-list>
+
+          <ion-item>
+            <ion-label floating>Enter the code you got in SMS</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>      
+        </ion-list>
         
      
 
     </ion-card-content>
   </ion-card>
-  <button ion-button block (click)="presentLoading()">Show Loading</button>
+  <button ion-button block (click)="goToAuthenticationSuccess()">Submit</button>
  
   
 </ion-content>

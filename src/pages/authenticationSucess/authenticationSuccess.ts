@@ -4,21 +4,20 @@ import { ListPage } from '../list/list';
 import { LoadingController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-authentication',
-  templateUrl: 'authentication.html'
+  selector: 'page-authenticationSuccess',
+  templateUrl: 'authenticationSuccess.html'
 })
-export class AuthenticationPage {
+export class AuthenticationSuccessPage {
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
   }
    
-  goToAuthenticationSuccess(){
+  presentLoading() {
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
       duration: 3000
     });
     loader.present();
-    this.navCtrl.push(AuthenticationSuccessPage);
   }
 }
 
