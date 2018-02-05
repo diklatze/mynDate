@@ -11,7 +11,6 @@ export class AuthenticationSuccessPage {
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
   }
-   
 
 }
 
