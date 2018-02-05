@@ -10,9 +10,18 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-img width="180" height="100" src="./assets/images/Myndate.png" style="background: transparent !important;"></ion-img>
-  <ion-list>
 
+  <ion-card>
+    <img src="./assets/images/Myndate.png"/>
+    <ion-card-content>
+      <ion-card-title>
+       Welcome to Myndate 
+        </ion-card-title>
+      <p>
+        The most app ever!
+      </p>
+    </ion-card-content>
+   
     <ion-item>
       <ion-label floating>Username</ion-label>
       <ion-input type="text"></ion-input>
@@ -23,17 +32,10 @@
       <ion-input type="password"></ion-input>
     </ion-item>
   
-  </ion-list>
   <button ion-button small (click)="goToSignIn()">Submit</button>
-  
-  <ion-card>
 
-   
-  <p></p>
-    <ion-card-content>
-     
-      <button ion-button full (click)="goToSignUp()">New to us? Sign Up </button>
-    </ion-card-content>
+  <button ion-button full (click)="goToSignUp()">New to us? Sign Up </button>
+  
   
   </ion-card>
        
