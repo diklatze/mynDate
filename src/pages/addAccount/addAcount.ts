@@ -1,35 +1,30 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ListPage } from '../list/list';
-import {AddAccountPage} from '../addAccount/addAcount';
+import { AuthenticationPage } from '../authentication/authentication';
 import { LoadingController } from 'ionic-angular';
 
+
+
 @Component({
-  selector: 'page-signIn',
-  templateUrl: 'signIn.html'
+  selector: 'page-addAccount',
+  templateUrl: 'addAccount.html'
 })
-export class SignInPage {
+export class AddAccountPage {
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
   }
 
-  goToAddAccount(){
+
+  goToAccountAuthentication(){
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
       duration: 3000
     });
     loader.present();
-    this.navCtrl.push(AddAccountPage);
+  //  this.navCtrl.push(AuthenticationPage);//dhange to accountAuthenticationPage
   }
 
-  goToMandateManage(){
-    let loader = this.loadingCtrl.create({
-      content: "Please wait...",
-      duration: 3000
-    });
-    loader.present();
-   // this.navCtrl.push(MandateManagemnet);
-  }
  
 
 }
