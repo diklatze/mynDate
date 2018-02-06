@@ -11,11 +11,6 @@ import { LoadingController } from 'ionic-angular';
   templateUrl: 'register.html'
 })
 export class RegisterPage {
-  name:String;
-  familyName:string;
-  cellPhoneNumber:String;
-  email:String;
-  password:String;
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
   }
