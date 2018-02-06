@@ -46,27 +46,27 @@
 
           <ion-item>
             <ion-label floating>Name</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text" [(ngModel)]="user.name"></ion-input>
           </ion-item>
       
           <ion-item>
               <ion-label floating>Family Name</ion-label>
-              <ion-input type="text"></ion-input>
+              <ion-input type="text" [(ngModel)]="user.familyName"></ion-input>
             </ion-item>
 
             <ion-item>
-                <ion-label floating>CellPhone Number</ion-label>
-                <ion-input type="text"></ion-input>
+                <ion-label floating>Phone Number</ion-label>
+                <ion-input type="text" [(ngModel)]="user.phoneNumber"></ion-input>
               </ion-item>
       
             <ion-item>
               <ion-label floating>Email</ion-label>
-              <ion-input type="text"></ion-input>
+              <ion-input type="text" [(ngModel)]="user.email"></ion-input>
             </ion-item>
               
           <ion-item>
             <ion-label floating>Password</ion-label>
-            <ion-input type="password" [(ngModel)]="password"></ion-input>
+            <ion-input type="text" [(ngModel)]="user.password"></ion-input>
           </ion-item>
         
         </ion-list>
