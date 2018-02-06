@@ -10,8 +10,10 @@ import { SignInPage } from '../pages/signIn/signIn';
 import { AuthenticationPage } from '../pages/authentication/authentication';
 import { AuthenticationSuccessPage } from '../pages/authenticationSucess/authenticationSuccess';
 import {AddAccountPage} from '../pages/addAccount/addAcount';
+import {MandateManage} from '../pages/mandateManage/mandateManage';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AuthenticationPage,
     AuthenticationSuccessPage,
     AddAccountPage,
-    SignInPage
+    SignInPage,
+    MandateManage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AuthenticationPage,
     AuthenticationSuccessPage,
     AddAccountPage,
-    SignInPage
+    SignInPage,
+    MandateManage
   ],
   providers: [
     StatusBar,
