@@ -6,12 +6,14 @@ import { LoadingController } from 'ionic-angular';
 
 @Component({
   selector: 'page-mandateManagePage',
-  templateUrl: 'mandateManagePage.html'
+  templateUrl: 'mandateManage.html'
 })
 export class MandateManagePage {
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
   }
-
+  goToAddMandate(){
+    
+  }
 
 }

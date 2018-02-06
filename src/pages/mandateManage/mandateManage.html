@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title><h3>MynDate Manage</h3></ion-title>
+    <ion-title><h3>MynDateManage</h3></ion-title>
     
   </ion-navbar>
   
@@ -11,16 +11,49 @@
 
 <ion-slides pager>
 
-  <ion-slide style="background-color: green">
-    <h2>Slide 1</h2>
+  <ion-slide>
+    <ion-card>
+      <img src="./assets/images/Myndate.png"/>
+      <ion-card-content>
+        <p>
+        Account Number 1
+        presents all the mandates ascribes to this account
+        </p>
+        <p>
+          <button ion-button small (click)="goToAddMandate()">AddMandate</button>
+        </p>
+      </ion-card-content>
+    </ion-card>
   </ion-slide>
 
-  <ion-slide style="background-color: blue">
-    <h2>Slide 2</h2>
+  <ion-slide>
+    <ion-card>
+      <img src="./assets/images/Myndate.png"/>
+      <ion-card-content>
+        <p>
+        Account Number 2
+        presents all the mandates ascribes to this account
+        </p>
+        <p>
+          <button ion-button small (click)="goToAddMandate()">AddMandate</button>
+        </p>
+      </ion-card-content>
+    </ion-card>
   </ion-slide>
 
-  <ion-slide style="background-color: red">
-    <h2>Slide 3</h2>
+  <ion-slide>
+    <ion-card>
+      <img src="./assets/images/Myndate.png"/>
+      <ion-card-content>
+        <p>
+        Account Number 3
+        presents all the mandates ascribes to this account
+        </p>
+        <p>
+          <button ion-button small (click)="goToAddMandate()">AddMandate</button>
+        </p>
+      </ion-card-content>
+    </ion-card>
   </ion-slide>
 
 </ion-slides>
