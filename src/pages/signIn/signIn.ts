@@ -21,6 +21,15 @@ export class SignInPage {
     loader.present();
     this.navCtrl.push(AddAccountPage);
   }
+
+  goToMandateManage(){
+    let loader = this.loadingCtrl.create({
+      content: "Please wait...",
+      duration: 3000
+    });
+    loader.present();
+   // this.navCtrl.push(MandateManagemnet);
+  }
  
 
 }
