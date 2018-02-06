@@ -7,22 +7,22 @@ import { LoadingController } from 'ionic-angular';
 
 
 @Component({
-  selector: 'page-register',
-  templateUrl: 'register.html'
+  selector: 'page-addAccount',
+  templateUrl: 'addAccount.html'
 })
-export class RegisterPage {
+export class AddAccountPage {
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
   }
 
 
-  goToAuthentication(){
+  goToAccountAuthentication(){
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
       duration: 3000
     });
     loader.present();
-    this.navCtrl.push(AuthenticationPage);
+  //  this.navCtrl.push(AuthenticationPage);//dhange to accountAuthenticationPage
   }
 
  

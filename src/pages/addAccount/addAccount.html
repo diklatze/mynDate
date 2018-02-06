@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title><h3>Sign Up</h3></ion-title>
+    <ion-title><h3>Add Account</h3></ion-title>
     
   </ion-navbar>
   
@@ -39,38 +39,29 @@
     <img src="./assets/images/Myndate.png"/>
     <ion-card-content>
       <p>
-       Welcome In please insert your details!!!
+       Please insert your account detailes:
       </p>
       <p>
         <ion-list>
 
           <ion-item>
-            <ion-label floating>Name</ion-label>
+            <ion-label floating>Bank</ion-label>
             <ion-input type="text"></ion-input>
           </ion-item>
       
           <ion-item>
-              <ion-label floating>Family Name</ion-label>
+              <ion-label floating>Branch</ion-label>
               <ion-input type="text"></ion-input>
             </ion-item>
 
             <ion-item>
-                <ion-label floating>CellPhone Number</ion-label>
+                <ion-label floating>Account Number</ion-label>
                 <ion-input type="text"></ion-input>
               </ion-item>
-      
-            <ion-item>
-              <ion-label floating>Email</ion-label>
-              <ion-input type="text"></ion-input>
-            </ion-item>
-              
-          <ion-item>
-            <ion-label floating>Password</ion-label>
-            <ion-input type="password" [(ngModel)]="password"></ion-input>
-          </ion-item>
+
         
         </ion-list>
-        <button ion-button small (click)="goToAuthentication()">Submit</button>
+        <button ion-button small (click)="goToAccountAuthentication()">Submit</button>
       </p>
     </ion-card-content>
   </ion-card>
