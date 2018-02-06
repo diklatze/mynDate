@@ -9,6 +9,7 @@ import { RegisterPage } from '../pages/register/register';
 import { SignInPage } from '../pages/signIn/signIn';
 import { AuthenticationPage } from '../pages/authentication/authentication';
 import { AuthenticationSuccessPage } from '../pages/authenticationSucess/authenticationSuccess';
+import {AddAccountPage} from '../pages/addAccount/addAcount';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -20,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RegisterPage,
     AuthenticationPage,
     AuthenticationSuccessPage,
+    AddAccountPage,
     SignInPage
   ],
   imports: [
@@ -35,6 +37,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RegisterPage,
     AuthenticationPage,
     AuthenticationSuccessPage,
+    AddAccountPage,
     SignInPage
   ],
   providers: [
