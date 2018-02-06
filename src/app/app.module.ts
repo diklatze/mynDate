@@ -10,7 +10,7 @@ import { SignInPage } from '../pages/signIn/signIn';
 import { AuthenticationPage } from '../pages/authentication/authentication';
 import { AuthenticationSuccessPage } from '../pages/authenticationSucess/authenticationSuccess';
 import {AddAccountPage} from '../pages/addAccount/addAcount';
-import {MandateManage} from '../pages/mandateManage/mandateManage';
+import {MandateManagePage} from '../pages/mandateManage/mandateManage';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -25,7 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AuthenticationSuccessPage,
     AddAccountPage,
     SignInPage,
-    MandateManage
+    MandateManagePage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +42,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AuthenticationSuccessPage,
     AddAccountPage,
     SignInPage,
-    MandateManage
+    MandateManagePage
   ],
   providers: [
     StatusBar,

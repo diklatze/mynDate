@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { ListPage } from '../list/list';
 import {AddAccountPage} from '../addAccount/addAcount';
 import { LoadingController } from 'ionic-angular';
+import {MandateManagePage} from '../mandateManage/mandateManage';
 
 @Component({
   selector: 'page-signIn',
@@ -28,7 +29,7 @@ export class SignInPage {
       duration: 3000
     });
     loader.present();
-   // this.navCtrl.push(MandateManagemnet);
+    this.navCtrl.push(MandateManagePage);
   }
  
 
