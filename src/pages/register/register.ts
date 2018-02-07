@@ -33,10 +33,13 @@ export class RegisterPage {
 
     this.http.post('http://localhost:8080/register', JSON.stringify(body), { headers: headers })
       .map(res => res.json())
-      .subscribe(data => { console.log(data); });
+      .subscribe(data => { console.log(data); }
+
+      
+    );
 
 
-    //this.navCtrl.push(AuthenticationPage);
+    this.navCtrl.push(AuthenticationPage);
   }
 
  
