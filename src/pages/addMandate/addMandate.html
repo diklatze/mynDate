@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><h3>Add Mandate</h3></ion-title>
+    
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content padding>
+ <!--> <ion-list>
+
+    <ion-item>
+      <ion-label floating>Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Family Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+        
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <button ion-button small>Submit</button><!-->
+  
+  <ion-card>
+    <img src="./assets/images/Myndate.png"/>
+    <ion-card-content>
+      <p>
+       You are welcome to add a new mandate!
+       please insert your detailes
+      </p>
+      <p>
+        <ion-list>
+
+          <ion-item>
+            <ion-label floating>Name</ion-label>
+            <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+              <ion-label floating>Family Name</ion-label>
+              <ion-input type="text" [(ngModel)]="user.familyName"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Phone Number</ion-label>
+                <ion-input type="text" [(ngModel)]="user.phoneNumber"></ion-input>
+              </ion-item>
+      
+            <ion-item>
+              <ion-label floating>Email</ion-label>
+              <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+            </ion-item>
+              
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="text" [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+        
+        </ion-list>
+        <button ion-button small (click)="goToAuthentication()">Submit</button>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+   
+ 
+    
+       
+  
+    
+  
+ 
+  
+</ion-content>

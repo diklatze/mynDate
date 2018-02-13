@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { ListPage } from '../list/list';
 import {AddAccountPage} from '../addAccount/addAcount';
 import { LoadingController } from 'ionic-angular';
+import {AddMandatePage} from '../addMandate/addMandate';
 
 @Component({
   selector: 'page-mandateManagePage',
@@ -13,7 +14,7 @@ export class MandateManagePage {
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
   }
   goToAddMandate(){
-    
+    this.navCtrl.push(AddMandatePage);
   }
 
 }

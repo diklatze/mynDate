@@ -8,10 +8,10 @@ import 'rxjs/add/operator/map';
 
 
 @Component({
-  selector: 'page-register',
-  templateUrl: 'register.html'
+  selector: 'page-addManadte',
+  templateUrl: 'addMandate.html'
 })
-export class RegisterPage {
+export class AddMandatePage {
   user:UserDetails = new UserDetails();
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public http: Http) {
