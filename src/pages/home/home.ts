@@ -35,6 +35,18 @@ export class HomePage {
 
 
   goToSignIn(){
+    let headers = new Headers;
+    headers.append('Content-Type', 'application/json');
+
+    let body = { email: this.user.email, password: this.user.password};
+
+    this.http.post('http://localhost:8080/login', JSON.stringify(body), { headers: headers })
+      .map(res => res.json())
+      .subscribe(data => { console.log(data); }
+
+      
+    );
+
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
       duration: 300
