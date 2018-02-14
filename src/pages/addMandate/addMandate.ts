@@ -7,12 +7,14 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 
+
 @Component({
   selector: 'page-addManadte',
   templateUrl: 'addMandate.html'
 })
 export class AddMandatePage {
   user:UserDetails = new UserDetails();
+
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public http: Http) {
   }
@@ -39,8 +41,19 @@ export class AddMandatePage {
       } 
     });
 
-
     //this.navCtrl.push(AuthenticationPage);
+  }
+
+  showSubOptionOfInsurance:boolean = false; //default
+  onSelectChangeOption() {
+     //grab form value
+  let option ;
+
+  //show subOptions
+  if(option == "Insurance"){
+    this.showSubOptionOfInsurance = true;
+  }
+
   }
 
  

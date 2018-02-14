@@ -19,7 +19,9 @@
        <ion-list>
          <ion-item>
             <ion-label>Service Provider erea</ion-label>
-            <ion-select [(ngModel)]="os" submitText="Okay" cancelText="Cancel" >
+    <!-->      <ion-select [(ngModel)]="os" submitText="Okay" cancelText="Cancel" > <!--> 
+   
+          <ion-select [(ngModel)]="option" (ionChange)="onSelectChangeOption()" submitText="Ok" cancelText="Cancel">
               <ion-option value="Insurance">Insurance</ion-option>
               <ion-option value="Electric company">Electric company</ion-option>
               <ion-option value="Cellphone provider">Cellphone provider</ion-option>
@@ -28,18 +30,16 @@
           </ion-item>
 
      
-              <ion-item>
-                <!-->  <p *ngIf="Insurance"> <!--> 
-            
+             <ion-item>
+                 <ion-item no-lines  *ngIf="showSubOptionOfElectric">       
                       <ion-label>Service Provider</ion-label>
-                      <ion-select [(ngModel)]="os1" submitText="Okay" cancelText="Cancel">
+                      <ion-select [(ngModel)]="os1" submitText="OK" cancelText="Cancel">
                         <ion-option value="Shirbit">Shirbit</ion-option>
                         <ion-option value="Yashir">Yashir</ion-option>
                       </ion-select>
-                >
-              <!-->    </p> <!--> 
                 </ion-item>
-            
+                 </ion-item>
+        
   
 
         
