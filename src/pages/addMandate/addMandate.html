@@ -25,13 +25,14 @@
             <ion-select [(ngModel)]="os" submitText="Okay" cancelText="Cancel">
               <!-->
 
-              <ion-select [(ngModel)]="option" (click)="onSelectChangeOption()" submitText="Ok" cancelText="Cancel">
+              <ion-select [(ngModel)]="option" (ionChange)="onSelectChangeOption()" submitText="Ok" cancelText="Cancel">
                 <ion-option value="Insurance">Insurance</ion-option>
                 <ion-option value="Electric company">Electric company</ion-option>
                 <ion-option value="Cellphone provider">Cellphone provider</ion-option>
                 <ion-option value="TV/Phone/Cell bundle provider">TV/Phone/Cell bundle provider</ion-option>
               </ion-select>
           </ion-item>
+          {{option}}
           {{showSubOptionOfInsurance}}
 
           <ion-item *ngIf="showSubOptionOfInsurance">

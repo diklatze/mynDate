@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AuthenticationPage } from '../authentication/authentication';
 import { LoadingController } from 'ionic-angular';
-import {UserDetails} from '../../classes/UserDetails';
+import { UserDetails } from '../../classes/UserDetails';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
@@ -13,14 +13,15 @@ import 'rxjs/add/operator/map';
   templateUrl: 'addMandate.html'
 })
 export class AddMandatePage {
-  user:UserDetails = new UserDetails();
-
+  user: UserDetails = new UserDetails();
+  option: String;
+  showSubOptionOfInsurance: boolean = false; //default
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public http: Http) {
   }
 
 
-  goToAuthentication(){
+  goToAuthentication() {
     // let loader = this.loadingCtrl.create({
     //   content: "Please wait...",
     //   duration: 3000
@@ -30,33 +31,34 @@ export class AddMandatePage {
     let headers = new Headers;
     headers.append('Content-Type', 'application/json');
 
-    let body = { email: this.user.email, password: this.user.password, name: this.user.name, phoneNumber: this.user.phoneNumber,
-      familyName: this.user.familyName};
+    let body = {
+      email: this.user.email, password: this.user.password, name: this.user.name, phoneNumber: this.user.phoneNumber,
+      familyName: this.user.familyName
+    };
 
     this.http.post('http://localhost:8080/register', JSON.stringify(body), { headers: headers })
       .map(res => res.json())
-      .subscribe(data => { console.log(data);
-      if(data.mail!=null){
-        //test
-      } 
-    });
+      .subscribe(data => {
+        console.log(data);
+        if (data.mail != null) {
+          //test
+        }
+      });
 
     //this.navCtrl.push(AuthenticationPage);
   }
 
-  showSubOptionOfInsurance:boolean = false; //default
-  
+
+
   onSelectChangeOption() {
-  //    //grab form value
-  // let option ;
 
-  // //show subOptions
-  // if(option == "Insurance"){
-    this.showSubOptionOfInsurance = true;
+    if (this.option == "Insurance") {
+      this.showSubOptionOfInsurance = true;
+    }
   }
 
-  }
+}
 
- 
+
 
 
