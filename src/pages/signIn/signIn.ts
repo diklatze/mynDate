@@ -26,7 +26,11 @@ export class SignInPage {
   goToMandateManage(){
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
+<<<<<<< HEAD
       duration: 1000
+=======
+      duration: 3
+>>>>>>> febb6456833ab5bc038078851200f0c43bd533f1
     });
     loader.present();
     this.navCtrl.push(MandateManagePage);
