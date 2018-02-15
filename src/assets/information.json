@@ -1,0 +1,86 @@
+{
+    "items": [
+        {
+            "name": "Add Service Provider",
+            "children": [
+                {
+                    "name": "Electric",
+                    "children": [
+                        {
+                            "name": "British Gas",
+                           "information": "",
+                            "icon": "Icon"
+                        },
+                        {
+                            "name": "E·ON",
+                            "information": "",
+                            "icon": "Icon"
+                        },
+                        {
+                            "name": "Direct Énergie",
+                            "information": "",
+                            "icon": "Icon"
+                        },
+                        {
+                            "name": "Endesa",
+                           "information": "",
+                            "icon": "Icon"
+                        }
+                        
+                        
+                    ]
+                },
+                {
+                    "name": "Insurance",
+                    "children": [
+                        {
+                            "name": "Allianz",
+                            "information": "",
+                            "icon": "$13"
+                        },
+                        {
+                            "name": "Yashor",
+                           "information": ".",
+                            "icon": "Icon"
+                        }
+                    ]
+                },
+                {
+                    "name": "TV/Phone/Cell bundle provider",
+                    "children": [
+                        {
+                            "name": "Virgin Mediay",
+                           "information": "",
+                            "icon": "Icon"
+                        },
+                        {
+                            "name": "HOT",
+                           "information": "",
+                            "icon": "Icon"
+                        },
+                        {
+                            "name": "YES",
+                             "information": "",
+                            "icon": "Icon"
+                        }
+                    ]
+                },
+                {
+                    "name": "Cellphone provider",
+                    "children": [
+                        {
+                            "name": "O2",
+                            "information": "",
+                            "icon": "Icon"
+                        },
+                        {
+                            "name": "Vodafone",
+                           "information": "",
+                            "icon": "Icon"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

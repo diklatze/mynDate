@@ -17,7 +17,7 @@ export class SignInPage {
   goToAddAccount(){
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
-      duration: 3000
+      duration: 1000
     });
     loader.present();
     this.navCtrl.push(AddAccountPage);
@@ -26,7 +26,7 @@ export class SignInPage {
   goToMandateManage(){
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
-      duration: 3000
+      duration: 1000
     });
     loader.present();
     this.navCtrl.push(MandateManagePage);

@@ -12,6 +12,29 @@ import 'rxjs/add/operator/map';
   selector: 'page-addManadte',
   templateUrl: 'addMandate.html'
 })
+
+export class AddMandatePage {
+  information: any[];
+ 
+  constructor(public navCtrl: NavController, private http: Http) {
+    let localData = http.get('assets/information.json').map(res => res.json().items);
+    localData.subscribe(data => {
+      this.information = data;
+    })
+  }
+ 
+  toggleSection(i) {
+    this.information[i].open = !this.information[i].open;
+  }
+ 
+  toggleItem(i, j) {
+    this.information[i].children[j].open = !this.information[i].children[j].open;
+  }
+}
+
+
+
+/*
 export class AddMandatePage {
   user:UserDetails = new UserDetails();
 
@@ -44,18 +67,20 @@ export class AddMandatePage {
     //this.navCtrl.push(AuthenticationPage);
   }
 
-  showSubOptionOfInsurance:boolean = false; //default
-  onSelectChangeOption() {
-     //grab form value
-  let option ;
 
-  //show subOptions
-  if(option == "Insurance"){
+  
+  showSubOptionOfInsurance:boolean = false; //default
+   option: String;
+
+  onSelectChangeOption() {
+  //    //grab form value
+
+  // //show subOptions
+   if(option == "Insurance"){
     this.showSubOptionOfInsurance = true;
   }
 
-  }
 
  
 
-}
+}*/
