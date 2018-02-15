@@ -22,7 +22,7 @@ export class AddAccountPage {
       duration: 3000
     });
     loader.present();
-  //  this.navCtrl.push(AuthenticationPage);//dhange to accountAuthenticationPage
+  //  this.navCtrl.push(AuthenticationPage);//dhange to accountAuthent
   }
 
  
