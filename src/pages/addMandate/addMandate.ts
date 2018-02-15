@@ -45,12 +45,13 @@ export class AddMandatePage {
   }
 
   showSubOptionOfInsurance:boolean = false; //default
+  
   onSelectChangeOption() {
-     //grab form value
-  let option ;
+  //    //grab form value
+  // let option ;
 
-  //show subOptions
-  if(option == "Insurance"){
+  // //show subOptions
+  // if(option == "Insurance"){
     this.showSubOptionOfInsurance = true;
   }
 
@@ -58,4 +59,4 @@ export class AddMandatePage {
 
  
 
-}
+
