@@ -31,9 +31,11 @@ export class AddMandatePage {
     this.information[i].children[j].open = !this.information[i].children[j].open;
   }
 
-  AddMandate()
-  {
-    
+  AddMandate(){
+
+  }
+  goToAuthentication(){
+
   }
 }
 
