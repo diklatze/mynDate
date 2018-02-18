@@ -29,26 +29,26 @@
                   {{ item.name }}
               </button>
          
-              <ion-list *ngIf="item.children && item.open" no-lines>
+              <ion-list *ngIf="item.areas && item.open" no-lines>
                 <!-- Second Level -->
-                <ion-list-header *ngFor="let child of item.children; let j = index" no-padding>
+                <ion-list-header *ngFor="let child of item.areas; let j = index" no-padding>
                   <!-- Toggle Button -->
-                  <button ion-item (click)="toggleItem(i, j)" *ngIf="child.children" class="child" detail-none>
+                  <button ion-item (click)="toggleItem(i, j)" *ngIf="child.companies" class="child" detail-none>
                     <ion-icon item-left name="add" *ngIf="!child.open"></ion-icon>
                     <ion-icon item-left name="close" *ngIf="child.open"></ion-icon>
                     {{ child.name }}
                   </button>
          
                   <!-- Direct Add Button as Fallback -->
-                  <ion-item *ngIf="!child.children" ion-item detail-none class="child-item" text-wrap>
+                  <ion-item *ngIf="!child.companies" ion-item detail-none class="child-item" text-wrap>
                     <h2>{{ child.name }}</h2>
                     <p text-lowercase>{{ child.information }}</p>
                     <button ion-button outline item-end (click)="AddMandate(child)">{{ child.icon }}</button>
                   </ion-item>
          
-                <ion-list *ngIf="child.children && child.open"> 
+                <ion-list *ngIf="child.companies && child.open"> 
                     <!-- Third Level -->
-                     <ion-item *ngFor="let item of child.children; let k = index" detail-none class="child-item" text-wrap>
+                     <ion-item *ngFor="let item of child.companies; let k = index" detail-none class="child-item" text-wrap>
                       <h2>{{ item.name }}</h2>
                       <p text-lowercase>{{ item.information }}</p>
                       <!-- Direct Add Button -->
@@ -62,7 +62,12 @@
             </ion-list-header>
 
          
-                <ion-list>
+               
+            
+            
+            
+            
+            <ion-list>
                   <ion-item>
                     <ion-label>Service Provider erea</ion-label>
                     <!-->

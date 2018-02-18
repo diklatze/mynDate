@@ -2,10 +2,10 @@
     "items": [
         {
             "name": "Add Service Provider",
-            "children": [
+            "areas": [
                 {
                     "name": "Electric",
-                    "children": [
+                    "companies": [
                         {
                             "name": "British Gas",
                            "information": "",
@@ -31,7 +31,7 @@
                 },
                 {
                     "name": "Insurance",
-                    "children": [
+                    "companies": [
                         {
                             "name": "Allianz",
                             "information": "",
@@ -39,14 +39,14 @@
                         },
                         {
                             "name": "Yashor",
-                           "information": ".",
+                           "information": "",
                             "icon": "./images/Endesa.png"
                         }
                     ]
                 },
                 {
                     "name": "TV/Phone/Cell bundle provider",
-                    "children": [
+                    "companies": [
                         {
                             "name": "Virgin Mediay",
                            "information": "",
@@ -66,7 +66,7 @@
                 },
                 {
                     "name": "Cellphone provider",
-                    "children": [
+                    "companies": [
                         {
                             "name": "O2",
                             "information": "",
