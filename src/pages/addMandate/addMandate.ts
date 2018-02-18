@@ -31,12 +31,51 @@ export class AddMandatePage {
     this.information[i].children[j].open = !this.information[i].children[j].open;
   }
 
-  AddMandate(){
+  AddMandate(i){
+    //this.information[i].open = !this.information[i].open;
 
   }
-  goToAuthentication(){
+  goToAuthentication(i){
+   
+
 
   }
+
+  option: String;
+  showSubOptionOfInsurance: boolean = false; //default
+  showSubOptionOfElectricCompany: boolean = false; //default
+  showSubOptionOfCellphoneProvider: boolean = false; //default
+  TvPhoneCellBundleProvider: boolean = false; //default
+
+  onSelectChangeOption() {
+
+    if (this.option == "Insurance") {
+      this.showSubOptionOfInsurance = true;
+      this.showSubOptionOfElectricCompany = false;
+      this.showSubOptionOfCellphoneProvider = false;
+      this.TvPhoneCellBundleProvider = false;
+    }
+    if (this.option == "ElectricCompany") {
+      this.showSubOptionOfInsurance = false;
+      this.showSubOptionOfElectricCompany = true;
+      this.showSubOptionOfCellphoneProvider = false;
+      this.TvPhoneCellBundleProvider = false;
+    }
+    if (this.option == "CellphoneProvider") {
+      this.showSubOptionOfInsurance = false;
+      this.showSubOptionOfElectricCompany = false;
+      this.showSubOptionOfCellphoneProvider = true;
+      this.TvPhoneCellBundleProvider = false;
+    }
+    if (this.option == "TvPhoneCellBundleProvider") {
+      this.showSubOptionOfInsurance = false;
+      this.showSubOptionOfElectricCompany = false;
+      this.showSubOptionOfCellphoneProvider = false;
+      this.TvPhoneCellBundleProvider = true;
+    }
+  }
+
+
 }
 
 

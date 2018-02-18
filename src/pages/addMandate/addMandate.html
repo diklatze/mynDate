@@ -61,6 +61,55 @@
               
             </ion-list-header>
 
+         
+                <ion-list>
+                  <ion-item>
+                    <ion-label>Service Provider erea</ion-label>
+                    <!-->
+                    <ion-select [(ngModel)]="os" submitText="Okay" cancelText="Cancel">
+                      <!-->
+        
+                      <ion-select [(ngModel)]="option" (ionChange)="onSelectChangeOption()" submitText="Ok" cancelText="Cancel">
+                        <ion-option value="Insurance">Insurance</ion-option>
+                        <ion-option value="ElectricCompany">Electric company</ion-option>
+                        <ion-option value="CellphoneProvider">Cellphone provider</ion-option>
+                        <ion-option value="TvPhoneCellBundleProvider">TV/Phone/Cell bundle provider</ion-option>
+                      </ion-select>
+                  </ion-item>
+            <!-->      {{option}}
+                  {{showSubOptionOfInsurance}}<!-->
+        
+                  <ion-item *ngIf="showSubOptionOfInsurance">
+                    <ion-label>Service Provider</ion-label>
+                    <ion-select [(ngModel)]="os1" submitText="OK" cancelText="Cancel">
+                      <ion-option value="Allianz">Allianz<img src="./assets/images/Myndate.png"></ion-option>
+                      <ion-option value="Yashir">Yashir</ion-option>
+                    </ion-select>
+                  </ion-item>
+                  <ion-item *ngIf="showSubOptionOfElectricCompany">
+                      <ion-label>Service Provider</ion-label>
+                      <ion-select [(ngModel)]="os2" submitText="OK" cancelText="Cancel">
+                        <ion-option value="BritishGas">British Gas<img src="./assets/images/Myndate.png"></ion-option>
+                        <ion-option value="EON">E·ON</ion-option>
+                      </ion-select>
+                    </ion-item>
+                    <ion-item *ngIf="showSubOptionOfCellphoneProvider">
+                        <ion-label>Service Provider</ion-label>
+                        <ion-select [(ngModel)]="os3" submitText="OK" cancelText="Cancel">
+                          <ion-option value="Vodafone">Vodafone<img src="./assets/images/Myndate.png"></ion-option>
+                          <ion-option value="O2">O2</ion-option>
+                          <ion-option value="Orange">orange</ion-option>
+                        </ion-select>
+                      </ion-item>
+                      <ion-item *ngIf="showSubOptionOfTvPhoneCellBundleProvider">
+                          <ion-label>Service Provider</ion-label>
+                          <ion-select [(ngModel)]="os4" submitText="OK" cancelText="Cancel">
+                            <ion-option value="Virgin Mediay">Virgin Mediay<img src="./assets/images/Myndate.png"></ion-option>
+                            <ion-option value="HOT">HOT</ion-option>
+                            <ion-option value="YES">YES</ion-option>
+                          </ion-select>
+                        </ion-item>
+                </ion-list>
             <ion-item>
                 <ion-label floating>Customer ID</ion-label>
                  <ion-input type="text" ></ion-input>

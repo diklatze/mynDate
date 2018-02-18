@@ -9,24 +9,23 @@
                         {
                             "name": "British Gas",
                            "information": "",
-                            "icon": "Icon"
+                            "icon": "./images/Endesa.png"
                         },
                         {
                             "name": "E·ON",
                             "information": "",
-                            "icon": "Icon"
+                            "icon": "./images/Endesa.png"
                         },
                         {
                             "name": "Direct Énergie",
                             "information": "",
-                            "icon": "Icon"
+                            "icon": "./images/hsbc.png"
                         },
                         {
                             "name": "Endesa",
                            "information": "",
-                            "icon": "Icon"
-                        }
-                        
+                            "icon": "./images/Endesa.png"
+                        }        
                         
                     ]
                 },
@@ -36,12 +35,12 @@
                         {
                             "name": "Allianz",
                             "information": "",
-                            "icon": "$13"
+                            "icon":"./images/Endesa.png"
                         },
                         {
                             "name": "Yashor",
                            "information": ".",
-                            "icon": "Icon"
+                            "icon": "./images/Endesa.png"
                         }
                     ]
                 },
@@ -51,17 +50,17 @@
                         {
                             "name": "Virgin Mediay",
                            "information": "",
-                            "icon": "Icon"
+                            "icon": "./images/Endesa.png"
                         },
                         {
                             "name": "HOT",
                            "information": "",
-                            "icon": "Icon"
+                            "icon": "./images/Endesa.png"
                         },
                         {
                             "name": "YES",
                              "information": "",
-                            "icon": "Icon"
+                            "icon":"./images/Endesa.png"
                         }
                     ]
                 },
@@ -71,12 +70,12 @@
                         {
                             "name": "O2",
                             "information": "",
-                            "icon": "Icon"
+                            "icon": "./images/Endesa.png"
                         },
                         {
                             "name": "Vodafone",
                            "information": "",
-                            "icon": "Icon"
+                            "icon":"./images/Endesa.png"
                         }
                     ]
                 }
