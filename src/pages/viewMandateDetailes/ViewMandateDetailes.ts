@@ -6,10 +6,10 @@ import { LoadingController } from 'ionic-angular';
 
 
 @Component({
-  selector: 'page-ViewMandateDetailesPage',
-  templateUrl: 'ViewMandateDetailesPage.html'
+  selector: 'page-viewMandateDetailesPage',
+  templateUrl: 'viewMandateDetailes.html'
 })
-export class ViewMandateDetailesPage {
+export class viewMandateDetailesPage {
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
   }

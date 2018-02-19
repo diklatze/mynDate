@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><h3>View mandate</h3></ion-title>
+    
+  </ion-navbar>  
+</ion-header>
+
+<ion-grid>
+
+  <ion-row wrap *ngFor="let res of ResArray">
+
+    <ion-col col-25> "Date"</ion-col>
+    <ion-col col-25> "Amount"</ion-col>
+   
+  </ion-row>
+</ion-grid>
