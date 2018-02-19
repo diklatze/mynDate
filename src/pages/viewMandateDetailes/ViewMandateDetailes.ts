@@ -7,7 +7,7 @@ import { LoadingController } from 'ionic-angular';
 
 @Component({
   selector: 'page-ViewMandateDetailesPage',
-  templateUrl: 'ViewMandateDetailesPage.html'
+  templateUrl: 'ViewMandateDetailes.html'
 })
 export class ViewMandateDetailesPage {
 
