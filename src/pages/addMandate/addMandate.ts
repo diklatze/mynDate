@@ -43,6 +43,9 @@ export class AddMandatePage {
 
   }
 
+
+  //isReadonly() {return true;}
+
   option: String;
   showSubOptionOfInsurance: boolean = false; //default
   showSubOptionOfElectricCompany: boolean = false; //default
