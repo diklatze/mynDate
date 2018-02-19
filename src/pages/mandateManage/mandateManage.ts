@@ -4,7 +4,7 @@ import { ListPage } from '../list/list';
 import {AddAccountPage} from '../addAccount/addAcount';
 import { LoadingController } from 'ionic-angular';
 import {AddMandatePage} from '../addMandate/addMandate';
-import {ViewMandateDetailesPage} from '../viewMandateDetailes/viewMandateDetailes'
+import {viewMandateDetailesPage} from '../viewMandateDetailes/viewMandateDetailes'
 
 @Component({
   selector: 'page-mandateManagePage',
@@ -17,9 +17,9 @@ export class MandateManagePage {
   goToAddMandate(){
     this.navCtrl.push(AddMandatePage);
   }
-  
+
   viewMandate(){
-    this.navCtrl.push(ViewMandateDetailesPage);
+    this.navCtrl.push(viewMandateDetailesPage);
   }
 
 }
