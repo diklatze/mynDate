@@ -15,6 +15,8 @@ import 'rxjs/add/operator/map';
 
 export class AddMandatePage {
   information: any[];
+  chosenCompany: String;
+  choice : boolean = false; 
  
   constructor(public navCtrl: NavController, private http: Http) {
     let localData = http.get('assets/information.json').map(res => res.json().items);
@@ -28,10 +30,10 @@ export class AddMandatePage {
   }
  
   toggleItem(i, j) {
-    this.information[i].children[j].open = !this.information[i].children[j].open;
+    this.information[i].areas[j].open = !this.information[i].areas[j].open;
   }
 
-  AddMandate(i){
+  choose(i){
     //this.information[i].open = !this.information[i].open;
 
   }
