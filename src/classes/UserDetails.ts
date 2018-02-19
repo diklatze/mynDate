@@ -1,3 +1,5 @@
+import { Account } from './Account';
+
 export class UserDetails {
     name: string; 
     email: string;
