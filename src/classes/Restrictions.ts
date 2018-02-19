@@ -1,5 +1,5 @@
 export class Restrictions {
-    notifyMoreThanUsual: String; 
-    notifyOnPayment: String;
+    notifyMoreThanUsual: boolean; 
+    notifyOnPayment: boolean;
     
     }
