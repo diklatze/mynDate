@@ -1,187 +1,183 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>
-      <h3>Add Mandate</h3>
-    </ion-title>
-
-  </ion-navbar>
-
-</ion-header>
-
-<ion-content padding>
-
-
-  <ion-card>
-    <img src="./assets/images/Myndate.png" />
-    <ion-card-content>
-
-
-        <ion-list class="accordion-list">
-            <!-- First Level -->
-            <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>
-              <!-- Toggle Button -->
-              <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{'section-active': item.open, 'section': !item.open}">
-                <ion-icon item-left name="arrow-forward" *ngIf="!item.open"></ion-icon>
-                <ion-icon item-left name="arrow-down" *ngIf="item.open"></ion-icon>
-                  {{ item.name }}
-              </button>
-         
-              <ion-list *ngIf="item.areas && item.open" no-lines>
-                <!-- Second Level -->
-                <ion-list-header *ngFor="let child of item.areas; let j = index" no-padding>
-                  <!-- Toggle Button -->
-                  <button ion-item (click)="toggleItem(i, j)" *ngIf="child.companies" class="child" detail-none>
-                    <ion-icon item-left name="add" *ngIf="!child.open"></ion-icon>
-                    <ion-icon item-left name="close" *ngIf="child.open"></ion-icon>
-                    {{ child.name }}
-                  </button>
-         
-                  <!-- Direct Add Button as Fallback -->
-                  <ion-item *ngIf="!child.companies" ion-item detail-none class="child-item" text-wrap>
-                    <h2>{{ child.name }}</h2>
-                    <p text-lowercase>{{ child.information }}</p>
-                    <button ion-button outline item-end (click)="AddMandate(child)">{{ child.icon }}</button>
-                  </ion-item>
-         
-                <ion-list *ngIf="child.companies && child.open"> 
-                    <!-- Third Level -->
-                     <ion-item *ngFor="let item of child.companies; let k = index" detail-none class="child-item" text-wrap>
-                      <h2>{{ item.name }}</h2>
-                      <p text-lowercase>{{ item.information }}</p>
-                      <!-- Direct Add Button -->
-<<<<<<< HEAD
-                    <button ion-button outline item-end (click)="AddMandate(item)"><img src="./assets/information/{{item.icon}}"/></button>             
-=======
-                      <button ion-button outline item-end (click)="AddMandate(item)"><ion-img width="2" height="2" src="./assets/images/Myndate.png"></ion-img></button>
->>>>>>> 75ced128adb90ed9802aaec49e0e1a941307bf2c
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        <h3>Add Mandate</h3>
+      </ion-title>
+  
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content padding>
+  
+  
+    <ion-card>
+      <img src="./assets/images/Myndate.png" />
+      <ion-card-content>
+  
+  
+          <ion-list class="accordion-list">
+              <!-- First Level -->
+              <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>
+                <!-- Toggle Button -->
+                <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{'section-active': item.open, 'section': !item.open}">
+                  <ion-icon item-left name="arrow-forward" *ngIf="!item.open"></ion-icon>
+                  <ion-icon item-left name="arrow-down" *ngIf="item.open"></ion-icon>
+                    {{ item.name }}
+                </button>
+           
+                <ion-list *ngIf="item.areas && item.open" no-lines>
+                  <!-- Second Level -->
+                  <ion-list-header *ngFor="let child of item.areas; let j = index" no-padding>
+                    <!-- Toggle Button -->
+                    <button ion-item (click)="toggleItem(i, j)" *ngIf="child.companies" class="child" detail-none>
+                      <ion-icon item-left name="add" *ngIf="!child.open"></ion-icon>
+                      <ion-icon item-left name="close" *ngIf="child.open"></ion-icon>
+                      {{ child.name }}
+                    </button>
+           
+                    <!-- Direct Add Button as Fallback -->
+                    <ion-item *ngIf="!child.companies" ion-item detail-none class="child-item" text-wrap>
+                      <h2>{{ child.name }}</h2>
+                      <p text-lowercase>{{ child.information }}</p>
+                      <button ion-button outline item-end (click)="AddMandate(child)">{{ child.icon }}</button>
                     </ion-item>
-                  </ion-list> 
-         
-                </ion-list-header>
-              </ion-list>
+           
+                  <ion-list *ngIf="child.companies && child.open"> 
+                      <!-- Third Level -->
+                       <ion-item *ngFor="let item of child.companies; let k = index" detail-none class="child-item" text-wrap>
+                        <h2>{{ item.name }}</h2>
+                        <p text-lowercase>{{ item.information }}</p>
+                        <!-- Direct Add Button -->
+                        <button ion-button outline item-end (click)="AddMandate(item)"><ion-img width="2" height="2" src="./assets/images/Myndate.png"></ion-img></button>
+                      </ion-item>
+                    </ion-list> 
+           
+                  </ion-list-header>
+                </ion-list>
+                
+              </ion-list-header>
+  
+           
+                 
               
-            </ion-list-header>
-
-         
-               
-            
-            
-            
-            
-            <ion-list>
-                  <ion-item>
-                    <ion-label>Service Provider erea</ion-label>
-                    <!-->
-                    <ion-select [(ngModel)]="os" submitText="Okay" cancelText="Cancel">
+              
+              
+              
+              <ion-list>
+                    <ion-item>
+                      <ion-label>Service Provider erea</ion-label>
                       <!-->
-        
-                      <ion-select [(ngModel)]="option" (ionChange)="onSelectChangeOption()" submitText="Ok" cancelText="Cancel">
-                        <ion-option value="Insurance">Insurance</ion-option>
-                        <ion-option value="ElectricCompany">Electric company</ion-option>
-                        <ion-option value="CellphoneProvider">Cellphone provider</ion-option>
-                        <ion-option value="TvPhoneCellBundleProvider">TV/Phone/Cell bundle provider</ion-option>
-                      </ion-select>
-                  </ion-item>
-            <!-->      {{option}}
-                  {{showSubOptionOfInsurance}}<!-->
-        
-                  <ion-item *ngIf="showSubOptionOfInsurance">
-                    <ion-label>Service Provider</ion-label>
-                    <ion-select [(ngModel)]="os1" submitText="OK" cancelText="Cancel">
-                      <ion-option value="Allianz">Allianz<img src="./assets/images/Myndate.png"></ion-option>
-                      <ion-option value="Yashir">Yashir</ion-option>
-                    </ion-select>
-                  </ion-item>
-                  <ion-item *ngIf="showSubOptionOfElectricCompany">
+                      <ion-select [(ngModel)]="os" submitText="Okay" cancelText="Cancel">
+                        <!-->
+          
+                        <ion-select [(ngModel)]="option" (ionChange)="onSelectChangeOption()" submitText="Ok" cancelText="Cancel">
+                          <ion-option value="Insurance">Insurance</ion-option>
+                          <ion-option value="ElectricCompany">Electric company</ion-option>
+                          <ion-option value="CellphoneProvider">Cellphone provider</ion-option>
+                          <ion-option value="TvPhoneCellBundleProvider">TV/Phone/Cell bundle provider</ion-option>
+                        </ion-select>
+                    </ion-item>
+              <!-->      {{option}}
+                    {{showSubOptionOfInsurance}}<!-->
+          
+                    <ion-item *ngIf="showSubOptionOfInsurance">
                       <ion-label>Service Provider</ion-label>
-                      <ion-select [(ngModel)]="os2" submitText="OK" cancelText="Cancel">
-                        <ion-option value="BritishGas">British Gas<img src="./assets/images/Myndate.png"></ion-option>
-                        <ion-option value="EON">E·ON</ion-option>
+                      <ion-select [(ngModel)]="os1" submitText="OK" cancelText="Cancel">
+                        <ion-option value="Allianz">Allianz<img src="./assets/images/Myndate.png"></ion-option>
+                        <ion-option value="Yashir">Yashir</ion-option>
                       </ion-select>
                     </ion-item>
-                    <ion-item *ngIf="showSubOptionOfCellphoneProvider">
+                    <ion-item *ngIf="showSubOptionOfElectricCompany">
                         <ion-label>Service Provider</ion-label>
-                        <ion-select [(ngModel)]="os3" submitText="OK" cancelText="Cancel">
-                          <ion-option value="Vodafone">Vodafone<img src="./assets/images/Myndate.png"></ion-option>
-                          <ion-option value="O2">O2</ion-option>
-                          <ion-option value="Orange">orange</ion-option>
+                        <ion-select [(ngModel)]="os2" submitText="OK" cancelText="Cancel">
+                          <ion-option value="BritishGas">British Gas<img src="./assets/images/Myndate.png"></ion-option>
+                          <ion-option value="EON">E·ON</ion-option>
                         </ion-select>
                       </ion-item>
-                      <ion-item *ngIf="showSubOptionOfTvPhoneCellBundleProvider">
+                      <ion-item *ngIf="showSubOptionOfCellphoneProvider">
                           <ion-label>Service Provider</ion-label>
-                          <ion-select [(ngModel)]="os4" submitText="OK" cancelText="Cancel">
-                            <ion-option value="Virgin Mediay">Virgin Mediay<img src="./assets/images/Myndate.png"></ion-option>
-                            <ion-option value="HOT">HOT</ion-option>
-                            <ion-option value="YES">YES</ion-option>
+                          <ion-select [(ngModel)]="os3" submitText="OK" cancelText="Cancel">
+                            <ion-option value="Vodafone">Vodafone<img src="./assets/images/Myndate.png"></ion-option>
+                            <ion-option value="O2">O2</ion-option>
+                            <ion-option value="Orange">orange</ion-option>
                           </ion-select>
                         </ion-item>
-                </ion-list>
-            <ion-item>
-                <ion-label floating>Customer ID</ion-label>
-                 <ion-input type="text" ></ion-input>
-                 </ion-item>
-                 <ion-item>
-                       <ion-label floating>User ID</ion-label>
-                   <ion-input type="text"></ion-input>
+                        <ion-item *ngIf="showSubOptionOfTvPhoneCellBundleProvider">
+                            <ion-label>Service Provider</ion-label>
+                            <ion-select [(ngModel)]="os4" submitText="OK" cancelText="Cancel">
+                              <ion-option value="Virgin Mediay">Virgin Mediay<img src="./assets/images/Myndate.png"></ion-option>
+                              <ion-option value="HOT">HOT</ion-option>
+                              <ion-option value="YES">YES</ion-option>
+                            </ion-select>
+                          </ion-item>
+                  </ion-list>
+              <ion-item>
+                  <ion-label floating>Customer ID</ion-label>
+                   <ion-input type="text" ></ion-input>
                    </ion-item>
                    <ion-item>
-                       <ion-label floating>Bank</ion-label>
-                     <ion-input type="text" ></ion-input>
+                         <ion-label floating>User ID</ion-label>
+                     <ion-input type="text"></ion-input>
                      </ion-item>
                      <ion-item>
-                         <ion-label floating>Branch</ion-label>
+                         <ion-label floating>Bank</ion-label>
                        <ion-input type="text" ></ion-input>
                        </ion-item>
-                         <ion-item>
-                           <ion-label floating>Account</ion-label>
-                      <ion-input type="text"></ion-input>
-                  </ion-item>
- 
-              <p>
-                 Add Restrictions:
-              </p> 
-     
-              <ion-item>
-                  <ion-label floating>Amount</ion-label>
-                  <ion-input type="text"></ion-input>
-              </ion-item>  
-                
-           
+                       <ion-item>
+                           <ion-label floating>Branch</ion-label>
+                         <ion-input type="text" ></ion-input>
+                         </ion-item>
+                           <ion-item>
+                             <ion-label floating>Account</ion-label>
+                        <ion-input type="text"></ion-input>
+                    </ion-item>
    
-               <ion-item>
-                 <ion-label>Date</ion-label>
-                 <ion-select [(ngModel)]="month">
-                   <ion-option value="01">January</ion-option>
-                   <ion-option value="02">February</ion-option>
-                   <ion-option value="03">March</ion-option>
-                   <ion-option value="04">April</ion-option>
-                   <ion-option value="05">May</ion-option>
-                   <ion-option value="06">June</ion-option>
-                   <ion-option value="07">July</ion-option>
-                   <ion-option value="08">August</ion-option>
-                   <ion-option value="09">September</ion-option>
-                   <ion-option value="10">October</ion-option>
-                   <ion-option value="11">November</ion-option>
-                   <ion-option value="12" checked="true">December</ion-option>
-                 </ion-select>
-                 <ion-select [(ngModel)]="year">
-                   <ion-option>2018</ion-option>
-                   <ion-option>2019</ion-option>
-                   <ion-option>2020</ion-option>
-                   <ion-option>2021</ion-option>
-                  <!-->  <ion-option checked="true">2018</ion-option>  <!-->
-                 </ion-select>
-               </ion-item>
-            
-               <button ion-button small (click)="goToAuthentication()">Submit</button>
-
-          </ion-list>
-
-    </ion-card-content>
-  </ion-card>
-
-
-</ion-content>
+                <p>
+                   Add Restrictions:
+                </p> 
+       
+                <ion-item>
+                    <ion-label floating>Amount</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>  
+                  
+             
+     
+                 <ion-item>
+                   <ion-label>Date</ion-label>
+                   <ion-select [(ngModel)]="month">
+                     <ion-option value="01">January</ion-option>
+                     <ion-option value="02">February</ion-option>
+                     <ion-option value="03">March</ion-option>
+                     <ion-option value="04">April</ion-option>
+                     <ion-option value="05">May</ion-option>
+                     <ion-option value="06">June</ion-option>
+                     <ion-option value="07">July</ion-option>
+                     <ion-option value="08">August</ion-option>
+                     <ion-option value="09">September</ion-option>
+                     <ion-option value="10">October</ion-option>
+                     <ion-option value="11">November</ion-option>
+                     <ion-option value="12" checked="true">December</ion-option>
+                   </ion-select>
+                   <ion-select [(ngModel)]="year">
+                     <ion-option>2018</ion-option>
+                     <ion-option>2019</ion-option>
+                     <ion-option>2020</ion-option>
+                     <ion-option>2021</ion-option>
+                    <!-->  <ion-option checked="true">2018</ion-option>  <!-->
+                   </ion-select>
+                 </ion-item>
+              
+                 <button ion-button small (click)="goToAuthentication()">Submit</button>
+  
+            </ion-list>
+  
+      </ion-card-content>
+    </ion-card>
+  
+  
+  </ion-content>
