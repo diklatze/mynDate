@@ -12,6 +12,7 @@ import { AuthenticationSuccessPage } from '../pages/authenticationSucess/authent
 import {AddAccountPage} from '../pages/addAccount/addAcount';
 import {MandateManagePage} from '../pages/mandateManage/mandateManage';
 import {AddMandatePage} from '../pages/addMandate/addMandate';
+import {ViewMandateDetailesPage} from '../pages/ViewMandateDetailesPage/ViewMandateDetailesPage'
 
 @Component({
   templateUrl: 'app.html'
