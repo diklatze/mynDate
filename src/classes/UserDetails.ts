@@ -6,4 +6,5 @@ export class UserDetails {
     password: string;
     phoneNumber: string;
     familyName: string;
+    accounts: Account[]; 
     }
