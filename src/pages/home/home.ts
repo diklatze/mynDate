@@ -4,7 +4,8 @@ import { ListPage } from '../list/list';
 import { RegisterPage } from '../register/register';
 import { SignInPage } from '../signIn/signIn';
 import { LoadingController } from 'ionic-angular';
-import {UserDetails} from '../../classes/UserDetails';
+import  {UserDetails} from '../../classes/UserDetails';
+import {MandateManagePage} from '../mandateManage/mandateManage';
 
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -52,7 +53,7 @@ export class HomePage {
       duration: 3
     });
     loader.present();
-    this.navCtrl.push(SignInPage);
+    this.navCtrl.push(MandateManagePage)
   }
   
 
