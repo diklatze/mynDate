@@ -22,13 +22,13 @@ export const MANDETES: Mandate[] = [
 
 ];
 export const ACCOUNTS: Account[] = [
-    { bankName: "Barclays", accountNum: "20474290124893", branchName: "02B",mandates:MANDETES,imagePath:".\assets\images\bankLogos\barclays.png" },
-    { bankName: "HSBC", accountNum: "20445454124893", branchName: "151",mandates:MANDETES , imagePath:".\assets\images\bankLogos\hsbc.png"},
-    { bankName: "HSBC", accountNum: "2047426541893", branchName: "0CD",mandates:MANDETES , imagePath:".\assets\images\bankLogos\hsbc.png"},
-    { bankName: "SWED", accountNum: "20474244444893", branchName: "DEQ",mandates:MANDETES, imagePath:".\assets\images\bankLogos\swedbank.png" },
-    { bankName: "BOI", accountNum: "20474233333893", branchName: "NEG",mandates:MANDETES , imagePath:".\assets\images\bankLogos\BOI.png"},
-    { bankName: "SWED", accountNum: "204742128744893", branchName: "B2R",mandates:MANDETES, imagePath:".\assets\images\bankLogos\swedbank.png" },
-    { bankName: "Barclays", accountNum: "20197224893", branchName: "02B",mandates:MANDETES, imagePath:".\assets\images\bankLogos\barclays.png"}
+    { bankName: "Barclays", accountNum: "1111111", branchName: "02B",mandates:MANDETES,imagePath:".\assets\images\bankLogos\barclays.png" },
+    { bankName: "HSBC", accountNum: "2222222", branchName: "151",mandates:MANDETES , imagePath:".\assets\images\bankLogos\hsbc.png"},
+    { bankName: "HSBC", accountNum: "3333333", branchName: "0CD",mandates:MANDETES , imagePath:".\assets\images\bankLogos\hsbc.png"},
+    { bankName: "SWED", accountNum: "4444444", branchName: "DEQ",mandates:MANDETES, imagePath:".\assets\images\bankLogos\swedbank.png" },
+    { bankName: "BOI", accountNum: "55555555", branchName: "NEG",mandates:MANDETES , imagePath:".\assets\images\bankLogos\BOI.png"},
+    { bankName: "SWED", accountNum: "6666666", branchName: "B2R",mandates:MANDETES, imagePath:".\assets\images\bankLogos\swedbank.png" },
+    { bankName: "Barclays", accountNum: "7777777", branchName: "02B",mandates:MANDETES, imagePath:".\assets\images\bankLogos\barclays.png"}
 
 ];
 
