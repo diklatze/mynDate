@@ -16,9 +16,9 @@
 
   <ion-slides pager>
 
-
-    <mandate-card></mandate-card>
-    <mandate-card></mandate-card>
+<ion-slide *ngFor="let account of myuser.accounts"> <mandate-card [account]="account"></mandate-card></ion-slide>
+   
+   
 
     <ion-slide>
       <ion-card>

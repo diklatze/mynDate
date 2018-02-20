@@ -10,7 +10,7 @@ import { UserDetails } from '../../classes/UserDetails';
 })
 export class MandateCard {
 
-    @Input() myUser:UserDetails;
+    @Input() account:Account;
 
   constructor() {
   }
