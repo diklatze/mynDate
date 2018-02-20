@@ -1,0 +1,41 @@
+<ion-slide>
+        <ion-card>
+         <img src="./assets/images/Myndate.png"/>
+          <ion-card-content>
+              <p>
+                  Account Number 1
+                </p>
+            <p>
+              <ion-list>
+                <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="./assets/images/companyLogos/british_gas.png">
+                  </ion-thumbnail>
+                  <h2>british_gas</h2>
+                  <p>Since 1.4.16</p>
+                  <button ion-button clear item-end (click)="viewMandate()">View</button>
+                </ion-item>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <img src="./assets/images/companyLogos/Allianze-insurance.png">
+                    </ion-thumbnail>
+                    <h2>Allianze-insurance</h2>
+                    <p>Since 1.1.17 </p>
+                    <button ion-button clear item-end (click)="viewMandate()">View</button>
+                  </ion-item>
+                  <ion-item>
+                      <ion-thumbnail item-start>
+                        <img src="./assets/images/companyLogos/Direct Énergie.png">
+                      </ion-thumbnail>
+                      <h2>Direct energie</h2>
+                      <p>Since 20.7.16</p>
+                      <button ion-button clear item-end (click)="viewMandate()">View</button>
+                    </ion-item>
+              </ion-list>
+            </p>
+            <p>
+              <button ion-button small (click)="goToAddMandate()" style="text-transform: none;">Add Mandate</button>
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>

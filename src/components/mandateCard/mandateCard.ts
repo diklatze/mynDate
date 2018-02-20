@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input , Output} from '@angular/core';
+import { UserDetails } from '../../classes/UserDetails';
 
 
 
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
   templateUrl: 'mandateCard.html'
 })
 export class MandateCard {
+
+    @Input() myUser:UserDetails;
 
   constructor() {
   }
