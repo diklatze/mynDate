@@ -3,74 +3,38 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title><h3>Myndate Manage</h3></ion-title>
-    
+    <ion-title>
+      <h3>Myndate Manage</h3>
+    </ion-title>
+
   </ion-navbar>
-  
+
 </ion-header>
+
 <ion-content>
 
 
-<ion-slides pager>
+  <ion-slides pager>
 
-  <ion-slide>
 
-   <ion-card>
-      <img src="./assets/images/Myndate.png"/>
-      <ion-card-content>
-        
-        <p>
-        Account Number 1
-        presents all the mandates ascribes to this account
-      </p>
-        <p>
-          <button ion-button small (click)="goToAddMandate()" style="text-transform: none;">Add Mandate to acc 1</button>
-          <button ion-button small (click)="viewMandate()" style="text-transform: none;">View mandates of acc 1</button>
-        </p>
-      </ion-card-content>
-    </ion-card>
-    <!-->  <ion-header>
-          <ion-navbar>
-            <ion-title>Thumbnails</ion-title>
-          </ion-navbar>
-        </ion-header>
-        
-        <ion-content>
-          <ion-list>
-        
-            <ion-item>
-              <ion-thumbnail item-start>
-               <img src="./assets/images/Myndate.png">
-              </ion-thumbnail>
-              <h2>My Neighbor Totoro</h2>
-              <p>Hayao Miyazaki • 1988</p>
-              <button ion-button clear item-end>View</button>
-            </ion-item>
-        
-     
-      
-          </ion-list>
-        </ion-content> <!-->
-  </ion-slide>
+    <mandate-card></mandate-card>
+    <mandate-card></mandate-card>
 
- <mandate-card></mandate-card>
+    <ion-slide>
+      <ion-card>
+        <img src="./assets/images/Myndate.png" />
+        <ion-card-content>
+          <p>
+            Account Number 3 presents all the mandates ascribes to this account
+          </p>
+          <p>
+            <button ion-button small (click)="goToAddMandate()" style="text-transform: none;">Add Mandate</button>
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
 
-  <ion-slide>
-    <ion-card>
-      <img src="./assets/images/Myndate.png"/>
-      <ion-card-content>
-        <p>
-        Account Number 3
-        presents all the mandates ascribes to this account
-        </p>
-        <p>
-          <button ion-button small (click)="goToAddMandate()" style="text-transform: none;">Add Mandate</button>
-        </p>
-      </ion-card-content>
-    </ion-card>
-  </ion-slide>
-
-</ion-slides>
+  </ion-slides>
 
 
 </ion-content>
