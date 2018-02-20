@@ -7,7 +7,7 @@ export const restrictions: Restrictions = { notifyMoreThanUsual: true, notifyOnP
 
 export const MANDETES: Mandate[] = [
     { CustomerId: "32545243445", userId: "123456789", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Allianze-insurance.png",initDate:"11/31/17" }, 
-    { CustomerId: "32545243445", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Allianze-insurance.png" }, 
+    { CustomerId: "32545243445", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Direct Énergie.png" }, 
     { CustomerId: "1234555555", userId: "208056789", serviceProviderName: "Virgin Media", serviceProviderArea: "TV/Phone/Cell bundle provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/virgin_media-bundle_internet_phone_tv.png" }, 
     { CustomerId: "6621243445", userId: "046259735", serviceProviderName: "British Gas", serviceProviderArea: "Electric company", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/british_gas.png" }, 
     // { CustomerId: "5487989898", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Cellphone provider", restrictions: restrictions ,imagePath:".\assets\images\companyLogos\O2_cellphone.png"}, 

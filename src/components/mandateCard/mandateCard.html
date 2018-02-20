@@ -1,20 +1,19 @@
-<ion-card>
+<!-- <ion-card>
 
-  <ion-card-content>
-    <p>
-      {{account.accountNum}}
-    </p>
-    <p>
-      <ion-list>
-        <ion-item *ngFor="let mandate of account.mandates">
-          <mandate-segmant [mandate]="mandate"></mandate-segmant>
-        </ion-item>
+  <ion-card-content> -->
 
 
-      </ion-list>
-    </p>
-    <p>
+    <ion-list-header>Account Num: {{account.accountNum}}</ion-list-header>
+
+    <ion-list>
+      <ion-item *ngFor="let mandate of account.mandates">
+        <mandate-segmant [mandate]="mandate"></mandate-segmant>
+      </ion-item>
+
+
+    </ion-list>
+   
       <!-- <button ion-button small (click)="goToAddMandate()" style="text-transform: none;">Add Mandate</button> -->
-    </p>
-  </ion-card-content>
-</ion-card>
+    
+  <!-- </ion-card-content>
+</ion-card> -->

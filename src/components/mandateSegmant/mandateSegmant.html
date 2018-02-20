@@ -1,9 +1,9 @@
 <ion-item>
-    <ion-avatar>
+    <ion-avatar item-start>
         <img src= "{{mandate.imagePath}}" height="3" width="8">
         
     </ion-avatar>
-    <h2>{{mandate.serviceProviderName}}</h2>
-    <p>Since {{mandate.initDate}}</p>
+    <!-- <h2>{{mandate.serviceProviderName}}</h2> -->
+    <ion-note item-end>Since {{mandate.initDate}}</ion-note>
     <button ion-button clear item-end (click)="viewMandate()">View</button>
 </ion-item>
