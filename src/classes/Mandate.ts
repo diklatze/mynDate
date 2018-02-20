@@ -7,6 +7,6 @@ export class Mandate {
     CustomerId: String;
     userId : String;
     restrictions : Restrictions;
-    imagePath : String;
+    imagePath ?: String;
     
     }
