@@ -8,7 +8,7 @@ export class Mandate {
     userId ?: String;
     restrictions : Restrictions;
     imagePath ?: String;
-    initDate? : Date;
-    expiredDate?:Date;
+    initDate? : String;
+    expiredDate?:String;
     
     }
