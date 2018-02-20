@@ -5,9 +5,10 @@ export class Mandate {
     serviceProviderArea?: String; 
     serviceProviderName: String;
     CustomerId: String;
-    initDate? : Date;
-    expiredDate?:Date;
+    userId ?: String;
     restrictions : Restrictions;
     imagePath ?: String;
+    initDate? : Date;
+    expiredDate?:Date;
     
     }
