@@ -14,7 +14,8 @@ import {MandateManagePage} from '../pages/mandateManage/mandateManage';
 import {AddMandatePage} from '../pages/addMandate/addMandate';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {viewMandateDetailesPage} from '../pages/viewMandateDetailes/viewMandateDetailes'
+import {viewMandateDetailesPage} from '../pages/viewMandateDetailes/viewMandateDetailes';
+import { MandateCard } from '../components/mandateCard/mandateCard';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import {viewMandateDetailesPage} from '../pages/viewMandateDetailes/viewMandateD
     AuthenticationSuccessPage,
     AddAccountPage,
     SignInPage,
+    MandateCard,
     MandateManagePage,
     AddMandatePage,
     viewMandateDetailesPage
