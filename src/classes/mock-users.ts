@@ -13,7 +13,7 @@ export const MANDETES: Mandate[] = [
 
 ];
 export const ACCOUNTS: Account[] = [
-    { bankName: "Barclays", accountNum: "20474290124893", branchName: "02B",mandates:MANDETES }
+    { bankName: "Barclays", accountNum: "20474290124893", branchName: "02B",mandates:MANDETES,imagePath:".\assets\images\bankLogos\barclays.png"}
 
 ];
 
