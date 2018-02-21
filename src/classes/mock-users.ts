@@ -3,6 +3,9 @@ import { Account } from './Account';
 import { Restrictions } from './Restrictions';
 import { Mandate } from './Mandate';
 import { PaymentDetail } from './PaymentDetail';
+import {BusinessComp} from './BusinessComp';
+
+
 
 export const restrictions: Restrictions = { notifyMoreThanUsual: true, notifyOnPayment: true };
 
@@ -96,8 +99,25 @@ export const USERS: UserDetails[] = [
     { name: "Yarden", familyName: "Shahor", userId: "305967410",email: "yarden.shahor@gmail.com", password: "abc123", phoneNumber: "+777777777",accounts:ACCOUNTS },
     { name: "Arbel", familyName: "Shahor", userId: "20153647",email: "arbel.shahor@gmail.com", password: "abc123", phoneNumber: "+9725645645",accounts:ACCOUNTS },
 
-
-
 ];
 
 
+export const BANKS:BusinessComp[]=[
+{Name:"BARCLAYS",ImagePath:"./assets/images/bankLogos/barclays.png" },
+{Name:"BOI",ImagePath:"./assets/images/bankLogos/BOI.png" },
+{Name:"HSBC",ImagePath:"./assets/images/bankLogos/hsbc.png" },
+{Name:"SWED",ImagePath:"./assets/images/bankLogos/swedbank.png" }
+
+];
+
+export const COMPANY:BusinessComp[]=[
+    {Name:"Allianze-insurance",ImagePath:"./assets/images/companyLogos/Allianze-insurance.png" },
+    {Name:"british_gas",ImagePath:"./assets/images/companyLogos/british_gas.png" },
+    {Name:"Direct Énergie",ImagePath:"./assets/images/companyLogos/Direct Énergie.png" },
+    {Name:"E.ON",ImagePath:"./assets/images/companyLogos/E.ON.png" },
+    {Name:"Endesa",ImagePath:"./assets/images/companyLogos/Endesa.png" },
+    {Name:"O2_cellphone",ImagePath:"./assets/images/companyLogos/O2_cellphone.png" },
+    {Name:"tesco",ImagePath:"./assets/images/companyLogos/tesco.png" },
+    {Name:"virgin_media",ImagePath:"./assets/images/companyLogos/virgin_media-bundle_internet_phone_tv.png" },
+    {Name:"vodafone",ImagePath:"./assets/images/companyLogos/vodafone.png" }
+    ];
