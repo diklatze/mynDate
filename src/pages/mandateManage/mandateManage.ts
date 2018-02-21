@@ -75,6 +75,12 @@ export class PopoverPage {
     this.navCtrl.push(AddMandatePage);
   }
 
+  goToTemp(){
+
+    this.navCtrl.pop();
+
+}  
+
   ngOnInit() {
     if (this.navParams.data) {
       this.contentEle = this.navParams.data.contentEle;
@@ -105,11 +111,7 @@ export class MandateManagePage {
     this.navCtrl.push(AddMandatePage);
   }
 
-  goToTemp(){
-
-    this.navCtrl.push(MandateManagePage);
-
-}  
+  
 
 presentPopover(ev) {
 
