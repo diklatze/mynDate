@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { ListPage } from '../list/list';
 import {AddAccountPage} from '../addAccount/addAcount';
 import { LoadingController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { Mandate } from '../../classes/Mandate';
 
 
 @Component({
@@ -10,9 +11,13 @@ import { LoadingController } from 'ionic-angular';
   templateUrl: 'viewMandateDetailes.html'
 })
 export class viewMandateDetailesPage {
+  myMandate: Mandate;
 
-  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,navParams: NavParams) {
+    this.myMandate = (navParams.get('myMandate'));
   }
 
+  
 
 }
+
