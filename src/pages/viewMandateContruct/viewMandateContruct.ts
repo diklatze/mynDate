@@ -19,6 +19,9 @@ import { Mandate } from '../../classes/Mandate';
 
 export class ViewMandateContructPage {
 
+  constructor(public navCtrl: NavController) {
+
+  }
   }
 
 
