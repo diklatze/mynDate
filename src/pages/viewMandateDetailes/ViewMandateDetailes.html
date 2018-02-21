@@ -18,12 +18,16 @@
 
 
     <ion-card-content>
-
+      <div class="row">
+        <div class="col">Date</div>
+      <!-->  <div class="col col-offset-5"></div> <!-->
+        <div class="col">Amount</div>
+      </div>  
       <div *ngFor="let paymentDetail of myMandate.paymentDetail">
         <div class="row">
-          <div class="col">Date: {{paymentDetail.paymentDate}}</div>
-          <div class="col col-offset-25"></div>
-          <div class="col">Amount: {{paymentDetail.paymentAmount}}</div>
+          <div class="col">{{paymentDetail.paymentDate}}</div>
+        <!-->  <div class="col col-offset-5"></div> <!-->
+          <div class="col">{{paymentDetail.paymentAmount}}</div>
         </div>  
       </div>
 
