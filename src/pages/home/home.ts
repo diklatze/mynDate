@@ -60,7 +60,7 @@ export class HomePage {
       message: 'Welcome back to myndate Ready to start?',
       buttons: [
         {
-          text: 'O.K',
+          text: 'OK',
           handler: () => {
             console.log('Disagree clicked');
             this.navCtrl.push(MandateManagePage);

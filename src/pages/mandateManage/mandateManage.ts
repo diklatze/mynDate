@@ -18,22 +18,28 @@ import { USERS } from '../../classes/mock-users'
     <ion-list class="popover-page">
     <ion-item>
     <ion-icon name="add" item-start></ion-icon>
-      Add New Mandate
+    <button ion-button clear item-start (click)="goToAddMandate()">Add New Mandate</button>
+      </ion-item>
+    <ion-item>
+    <ion-icon name="home" item-start></ion-icon>
+    <button ion-button clear item-start (click)="goToTemp()">home</button>
       </ion-item>
       <ion-item>
-      <ion-icon name="add" item-start></ion-icon>
-        Add New Mandate
+      <ion-icon name="man" item-start></ion-icon>
+      <button ion-button clear item-start (click)="goToTemp()">Edit Profile</button>
         </ion-item>
         <ion-item>
-        <ion-icon name="add" item-start></ion-icon>
-          Add New Mandate
+        <ion-icon name="cash" item-start></ion-icon>
+        <button ion-button clear item-start (click)="goToTemp()">Add Bank Account</button>   
           </ion-item>
+        <ion-item>
+        <ion-icon name="remove" item-start></ion-icon>
+        <button ion-button clear item-start (click)="goToTemp()">Remove Bank Account</button>    
+         </ion-item>
           <ion-item>
-          <ion-icon name="add" item-start></ion-icon>
-          <button ion-button clear item-start (click)="goToAddMandate()">Add New Mandate</button>
+          <ion-icon name="log-out" item-start></ion-icon>
+          <button ion-button clear item-start (click)="goToTemp()">Sign out</button>    
             </ion-item>
-     
-   
     </ion-list>
   `
 })
@@ -99,7 +105,13 @@ export class MandateManagePage {
     this.navCtrl.push(AddMandatePage);
   }
 
-  presentPopover(ev) {
+  goToTemp(){
+
+    this.navCtrl.push(MandateManagePage);
+
+}  
+
+presentPopover(ev) {
 
     let popover = this.popoverCtrl.create(PopoverPage, {
       contentEle: this.content.nativeElement,
