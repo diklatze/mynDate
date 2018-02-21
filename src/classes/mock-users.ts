@@ -8,7 +8,10 @@ import {BusinessComp} from './BusinessComp';
 
 
 export const restrictions: Restrictions = { notifyMoreThanUsual: true, notifyOnPayment: true };
+export const PaymentDetailDemo: PaymentDetail[] = [
+    {paymentAmount: "€ 320",paymentDate: "18/02/22" },
 
+];
 export const PaymentDetail1: PaymentDetail[] = [
     {paymentAmount: "€ 456.37",paymentDate: "17/09/01" },
     {paymentAmount: "€ 479.37",paymentDate: "17/08/01" },
