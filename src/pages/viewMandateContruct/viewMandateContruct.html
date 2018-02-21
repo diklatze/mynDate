@@ -18,7 +18,7 @@
       <ion-list>
         <ion-item>
           <ion-label stacked>Service Provider</ion-label>
-          <ion-input  type="text"  value="Allianze-insurance"></ion-input>
+          <ion-input  type="text" [readonly]="isReadonly" value="Allianze-insurance"></ion-input>
         </ion-item>
             
         
@@ -54,29 +54,28 @@
         
         <ion-item>
             <ion-label stacked>Expiration Date</ion-label>
-            <ion-input  type="text"  value="20/09/01"></ion-input>
+            <ion-input  type="text" readonly="true" value="20/09/01"></ion-input>
           </ion-item> 
   
       <ion-item>
         <ion-label stacked>Max amount</ion-label>
-        <ion-input type="text" value="€540.00"></ion-input>
+        <ion-input type="text" readonly="true" value="€540.00"></ion-input>
       </ion-item>
   
       <ion-item>
           <ion-label stacked>Always send notification</ion-label>
-          <ion-toggle color="royal" checked="true"></ion-toggle>
+          <ion-toggle color="royal" readonly="true" checked="true"></ion-toggle>
         </ion-item>
         <ion-item>
             <ion-label stacked>Always ask for my approvel </ion-label>
-            <ion-toggle color="royal" checked="false"></ion-toggle>
+            <ion-toggle color="royal" readonly="true" checked="false"></ion-toggle>
           </ion-item>
   
   
   
   
   
-      <button ion-button small (click)="submit()">Submit</button>
-  
+     
     </ion-list>
   
   
