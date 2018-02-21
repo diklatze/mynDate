@@ -6,9 +6,11 @@ import { SignInPage } from '../signIn/signIn';
 import { LoadingController } from 'ionic-angular';
 import  {UserDetails} from '../../classes/UserDetails';
 import {MandateManagePage} from '../mandateManage/mandateManage';
-
+import { AlertController } from 'ionic-angular';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
+
+import { USERS } from '../../classes/mock-users';
 
 
 @Component({
@@ -17,11 +19,16 @@ import 'rxjs/add/operator/map';
 })
 export class HomePage {
 
+
+  users = USERS;
+  myuser = this.users[1];
+  
   user:UserDetails = new UserDetails();
 
-  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public http: Http) {
+  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public http: Http, public alerCtrl: AlertController) {
   }
 
+  
   goToSignUp(){
     
 
@@ -48,12 +55,27 @@ export class HomePage {
       
     );
 
-    let loader = this.loadingCtrl.create({
+    let alert = this.alerCtrl.create({
+      title: 'Hello, John Lennon',
+      message: 'Welcome back to myndate Ready to start?',
+      buttons: [
+        {
+          text: 'O.K',
+          handler: () => {
+            console.log('Disagree clicked');
+            this.navCtrl.push(MandateManagePage);
+          }
+        }]
+    });
+    alert.present()
+
+   
+ /*   let loader = this.loadingCtrl.create({
       content: "Please wait...",
       duration: 3
     });
     loader.present();
-    this.navCtrl.push(MandateManagePage)
+    this.navCtrl.push(MandateManagePage)*/
   }
   
 
