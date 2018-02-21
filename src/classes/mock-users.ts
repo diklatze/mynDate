@@ -118,6 +118,7 @@ export const COMPANY:BusinessComp[]=[
     {name:"British_gas",imagePath:"./assets/images/companyLogos/british_gas.png" },
     {name:"Direct Énergie",imagePath:"./assets/images/companyLogos/Direct Énergie.png" },
     {name:"E.ON",imagePath:"./assets/images/companyLogos/E.ON.png" },
+    {name:"T-Mobile",imagePath:"./assets/images/companyLogos/tmobile.jpg" },
     {name:"Endesa",imagePath:"./assets/images/companyLogos/Endesa.png" },
     {name:"O2_cellphone",imagePath:"./assets/images/companyLogos/O2_cellphone.png" },
     {name:"tesco",imagePath:"./assets/images/companyLogos/tesco.png" },

@@ -28,10 +28,10 @@
     
     <ion-item>
       <ion-label stacked>Customer ID</ion-label>
-      <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="32545243775"></ion-input>
+      <ion-input *ngIf="newMandate.serviceProviderName" type="text"  value=""></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label stacked>User ID</ion-label>
+      <ion-label stacked>National ID</ion-label>
       <ion-input *ngIf="newMandate.serviceProviderName" type="text" value="{{myUser.userId}}"></ion-input>
     </ion-item>
     <ion-item>
@@ -49,10 +49,15 @@
       <ion-label stacked>Account</ion-label>
       <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="20474290124893" ></ion-input>
     </ion-item>
-
+    <button ion-button clear item-end style="text-transform: none;"><u>Read & Accept Contract Terms</u> </button>
     <ion-list-header>
        Add Restrictions
       </ion-list-header>
+      
+      <ion-item>
+          <ion-label stacked>Expiration Date</ion-label>
+          <ion-input  type="text"  value=""></ion-input>
+        </ion-item> 
 
     <ion-item>
       <ion-label stacked>Max amount</ion-label>
@@ -70,32 +75,7 @@
 
 
 
-    <!-- <ion-item>
-      <ion-label>Date</ion-label>
-      <ion-select [(ngModel)]="month">
-        <ion-option value="01">January</ion-option>
-        <ion-option value="02">February</ion-option>
-        <ion-option value="03">March</ion-option>
-        <ion-option value="04">April</ion-option>
-        <ion-option value="05">May</ion-option>
-        <ion-option value="06">June</ion-option>
-        <ion-option value="07">July</ion-option>
-        <ion-option value="08">August</ion-option>
-        <ion-option value="09">September</ion-option>
-        <ion-option value="10">October</ion-option>
-        <ion-option value="11">November</ion-option>
-        <ion-option value="12" checked="true">December</ion-option>
-      </ion-select>
-      <ion-select [(ngModel)]="year">
-        <ion-option>2018</ion-option>
-        <ion-option>2019</ion-option>
-        <ion-option>2020</ion-option>
-        <ion-option>2021</ion-option>
-        <!-->
-        <!-- <ion-option checked="true">2018</ion-option> -->
-        <!-->
-      </ion-select>
-    </ion-item> -->
+
 
     <button ion-button small (click)="submit()">Submit</button>
 
