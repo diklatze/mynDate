@@ -46,6 +46,8 @@ import { USERS } from '../../classes/mock-users'
 export class PopoverPage {
   background: string;
   contentEle: any;
+  users = USERS;
+  myuser = this.users[1];
   textEle: any;
   fontFamily;
 
@@ -72,7 +74,7 @@ export class PopoverPage {
 
   }
   goToAddMandate(){
-    this.navCtrl.push(AddMandatePage);
+    this.navCtrl.push(AddMandatePage,{myUser:this.myuser});
   }
 
   goToTemp(){

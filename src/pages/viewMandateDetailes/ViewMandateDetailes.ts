@@ -21,7 +21,7 @@ export class viewMandateDetailesPage {
   
   myMandate: Mandate;
 
-  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,navParams: NavParams, public popoverCtrl: PopoverController) {
+  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,public navParams: NavParams, public popoverCtrl: PopoverController) {
     this.myMandate = (navParams.get('myMandate'));
   }
 
