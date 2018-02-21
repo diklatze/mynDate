@@ -5,7 +5,10 @@ import { LoadingController } from 'ionic-angular';
 import { UserDetails } from '../../classes/UserDetails';
 import { Http, Headers } from '@angular/http';
 import { NavParams } from 'ionic-angular';
-import 'rxjs/add/operator/map';
+import { BANKS } from '../../classes/mock-users';
+import { COMPANY } from '../../classes/mock-users';
+import { Account } from '../../classes/Account';
+import { Mandate } from '../../classes/Mandate';
 
 
 
@@ -15,59 +18,36 @@ import 'rxjs/add/operator/map';
 })
 
 export class AddMandatePage {
-  
-myUser: UserDetails;
+
+  banks = BANKS;
+  companys = COMPANY;
+  myUser: UserDetails;
+  newAccount: Account = new Account();
+  newMandate : Mandate = new Mandate();
+
+ 
 
   chosenCompany: String;
-  choice : boolean = false; 
-  option: String;
-  showSubOptionOfInsurance: boolean = false; 
-  showSubOptionOfElectricCompany: boolean = false; 
-  showSubOptionOfCellphoneProvider: boolean = false; 
-  showSubOptionOfTvPhoneCellBundleProvider: boolean = false; 
- 
-  constructor(public navCtrl: NavController, private http: Http,public navParams: NavParams ) {
+
+
+  constructor(public navCtrl: NavController, private http: Http, public navParams: NavParams) {
     this.myUser = (navParams.get('myUser'));
-    
+    // this.newAccount.mandates[0]= this.newMandate;
+    // this.myUser.accounts.push(this.newAccount);
   }
- 
-  
-  
-
-
-  
 
 
 
-  onSelectChangeOption() {
 
-    if (this.option == "Insurance") {
-      this.showSubOptionOfInsurance = true;
-      this.showSubOptionOfElectricCompany = false;
-      this.showSubOptionOfCellphoneProvider = false;
-      this.showSubOptionOfTvPhoneCellBundleProvider = false;
-    }
-    if (this.option == "ElectricCompany") {
-      this.showSubOptionOfInsurance = false;
-      this.showSubOptionOfElectricCompany = true;
-      this.showSubOptionOfCellphoneProvider = false;
-      this.showSubOptionOfTvPhoneCellBundleProvider = false;
-    }
-    if (this.option == "CellphoneProvider") {
-      this.showSubOptionOfInsurance = false;
-      this.showSubOptionOfElectricCompany = false;
-      this.showSubOptionOfCellphoneProvider = true;
-      this.showSubOptionOfTvPhoneCellBundleProvider = false;
-    }
-    if (this.option == "TvPhoneCellBundleProvider") {
-      this.showSubOptionOfInsurance = false;
-      this.showSubOptionOfElectricCompany = false;
-      this.showSubOptionOfCellphoneProvider = false;
-      this.showSubOptionOfTvPhoneCellBundleProvider = true;
-    }
-  }
+
+
+
+
 
 
 }
+
+
+
 
 

@@ -8,6 +8,7 @@ import { ViewChild, ElementRef } from '@angular/core';
 import { PopoverController} from 'ionic-angular';
 
 
+
 @Component({
   selector: 'page-viewMandateDetailesPage',
   templateUrl: 'viewMandateDetailes.html'
@@ -20,6 +21,7 @@ import { PopoverController} from 'ionic-angular';
 export class viewMandateDetailesPage {
   
   myMandate: Mandate;
+ 
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,public navParams: NavParams, public popoverCtrl: PopoverController) {
     this.myMandate = (navParams.get('myMandate'));

@@ -1,6 +1,6 @@
 
 
 export class BusinessComp {
-    Name: String; 
-    ImagePath: String;
+    name: String; 
+    imagePath: String;
     }

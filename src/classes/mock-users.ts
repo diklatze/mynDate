@@ -103,21 +103,21 @@ export const USERS: UserDetails[] = [
 
 
 export const BANKS:BusinessComp[]=[
-{Name:"BARCLAYS",ImagePath:"./assets/images/bankLogos/barclays.png" },
-{Name:"BOI",ImagePath:"./assets/images/bankLogos/BOI.png" },
-{Name:"HSBC",ImagePath:"./assets/images/bankLogos/hsbc.png" },
-{Name:"SWED",ImagePath:"./assets/images/bankLogos/swedbank.png" }
+{name:"BARCLAYS",imagePath:"./assets/images/bankLogos/barclays.png" },
+{name:"BOI",imagePath:"./assets/images/bankLogos/BOI.png" },
+{name:"HSBC",imagePath:"./assets/images/bankLogos/hsbc.png" },
+{name:"SWED",imagePath:"./assets/images/bankLogos/swedbank.png" }
 
 ];
 
 export const COMPANY:BusinessComp[]=[
-    {Name:"Allianze-insurance",ImagePath:"./assets/images/companyLogos/Allianze-insurance.png" },
-    {Name:"british_gas",ImagePath:"./assets/images/companyLogos/british_gas.png" },
-    {Name:"Direct Énergie",ImagePath:"./assets/images/companyLogos/Direct Énergie.png" },
-    {Name:"E.ON",ImagePath:"./assets/images/companyLogos/E.ON.png" },
-    {Name:"Endesa",ImagePath:"./assets/images/companyLogos/Endesa.png" },
-    {Name:"O2_cellphone",ImagePath:"./assets/images/companyLogos/O2_cellphone.png" },
-    {Name:"tesco",ImagePath:"./assets/images/companyLogos/tesco.png" },
-    {Name:"virgin_media",ImagePath:"./assets/images/companyLogos/virgin_media-bundle_internet_phone_tv.png" },
-    {Name:"vodafone",ImagePath:"./assets/images/companyLogos/vodafone.png" }
+    {name:"Allianze-insurance",imagePath:"./assets/images/companyLogos/Allianze-insurance.png" },
+    {name:"British_gas",imagePath:"./assets/images/companyLogos/british_gas.png" },
+    {name:"Direct Énergie",imagePath:"./assets/images/companyLogos/Direct Énergie.png" },
+    {name:"E.ON",imagePath:"./assets/images/companyLogos/E.ON.png" },
+    {name:"Endesa",imagePath:"./assets/images/companyLogos/Endesa.png" },
+    {name:"O2_cellphone",imagePath:"./assets/images/companyLogos/O2_cellphone.png" },
+    {name:"tesco",imagePath:"./assets/images/companyLogos/tesco.png" },
+    {name:"virgin_media",imagePath:"./assets/images/companyLogos/virgin_media-bundle_internet_phone_tv.png" },
+    {name:"vodafone",imagePath:"./assets/images/companyLogos/vodafone.png" }
     ];
