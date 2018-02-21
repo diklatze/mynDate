@@ -6,7 +6,8 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Mandate } from '../../classes/Mandate';
 import { ViewChild, ElementRef } from '@angular/core';
 import { PopoverController} from 'ionic-angular';
-import {AddContructPage} from '../addContruct/addContruct';
+import {ViewMandateContructPage} from '../pages/viewMandateContruct/viewMandateContruct';
+
 
 
 @Component({
@@ -29,7 +30,7 @@ export class viewMandateDetailesPage {
 
   goToMandateContruct()
   {
-    this.navCtrl.push(AddContructPage);
+    this.navCtrl.push(ViewMandateContructPage);
   };
 
  

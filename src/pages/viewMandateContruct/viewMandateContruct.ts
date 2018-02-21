@@ -13,27 +13,12 @@ import { Mandate } from '../../classes/Mandate';
 
 
 @Component({
-  selector: 'page-addContruct',
-  templateUrl: 'addContruct.html'
+  selector: 'page-viewMandateContruct',
+  templateUrl: 'viewMandateContruct.html'
 })
 
-export class AddContructPage {
+export class ViewMandateContructPage {
 
-  banks = BANKS;
-  companys = COMPANY;
-  myUser: UserDetails;
-  newAccount: Account = new Account();
-  newMandate : Mandate = new Mandate();
-
- 
-
-  chosenCompany: String;
-
-
-  constructor(public navCtrl: NavController, private http: Http, public navParams: NavParams) {
-    this.myUser = (navParams.get('myUser'));
-    // this.newAccount.mandates[0]= this.newMandate;
-    // this.myUser.accounts.push(this.newAccount);
   }
 
 
@@ -45,7 +30,7 @@ export class AddContructPage {
 
 
 
-}
+
 
 
 

@@ -13,7 +13,7 @@ import {AddAccountPage} from '../pages/addAccount/addAcount';
 import {MandateManagePage} from '../pages/mandateManage/mandateManage';
 import {AddMandatePage} from '../pages/addMandate/addMandate';
 import {viewMandateDetailesPage} from '../pages/viewMandateDetailes/viewMandateDetailes';
-import {AddContructPage} from '../pages/addContruct/addContruct';
+import {ViewMandateContructPage} from '../pages/viewMandateContruct/viewMandateContruct';
 
 
 @Component({
