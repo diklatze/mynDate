@@ -53,7 +53,7 @@ export class AddMandatePage {
     MANDETES1.push(this.newMandate);
     let alert = this.alerCtrl.create({
       title: 'T-Mobile Mandate was successfully created',
-      // message:,
+      message:'Notification has been sent to your bank',
       buttons: [
         {
           text: 'OK',
