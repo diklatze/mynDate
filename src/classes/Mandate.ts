@@ -11,7 +11,7 @@ export class Mandate {
     imagePath ?: String;
     initDate? : String;
     expiredDate?:String;
-    paymentsDetails?: PaymentDetail[]; 
+    paymentsDetail: PaymentDetail[]; 
 
     
     }
