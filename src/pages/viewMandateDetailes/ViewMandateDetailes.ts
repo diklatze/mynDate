@@ -27,6 +27,8 @@ export class viewMandateDetailesPage {
     this.myMandate = (navParams.get('myMandate'));
   }
 
+  goToMandateContruct(){};
+
  
 
 }
