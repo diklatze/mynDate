@@ -4,6 +4,7 @@ import { AuthenticationPage } from '../authentication/authentication';
 import { LoadingController } from 'ionic-angular';
 import { UserDetails } from '../../classes/UserDetails';
 import { Http, Headers } from '@angular/http';
+import { NavParams } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 
 
@@ -14,43 +15,29 @@ import 'rxjs/add/operator/map';
 })
 
 export class AddMandatePage {
-  information: any[];
+  
+myUser: UserDetails;
+
   chosenCompany: String;
   choice : boolean = false; 
- 
-  constructor(public navCtrl: NavController, private http: Http) {
-    let localData = http.get('assets/information.json').map(res => res.json().items);
-    localData.subscribe(data => {
-      this.information = data;
-    })
-  }
- 
-  toggleSection(i) {
-    this.information[i].open = !this.information[i].open;
-  }
- 
-  toggleItem(i, j) {
-    this.information[i].areas[j].open = !this.information[i].areas[j].open;
-  }
-
-  choose(i){
-    //this.information[i].open = !this.information[i].open;
-
-  }
-  goToAuthentication(i){
-   
-
-
-  }
-
-
-  //isReadonly() {return true;}
-
   option: String;
-  showSubOptionOfInsurance: boolean = false; //default
-  showSubOptionOfElectricCompany: boolean = false; //default
-  showSubOptionOfCellphoneProvider: boolean = false; //default
-  showSubOptionOfTvPhoneCellBundleProvider: boolean = false; //default
+  showSubOptionOfInsurance: boolean = false; 
+  showSubOptionOfElectricCompany: boolean = false; 
+  showSubOptionOfCellphoneProvider: boolean = false; 
+  showSubOptionOfTvPhoneCellBundleProvider: boolean = false; 
+ 
+  constructor(public navCtrl: NavController, private http: Http,public navParams: NavParams ) {
+    this.myUser = (navParams.get('myUser'));
+    
+  }
+ 
+  
+  
+
+
+  
+
+
 
   onSelectChangeOption() {
 
