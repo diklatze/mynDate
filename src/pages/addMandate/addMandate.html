@@ -14,7 +14,6 @@
 
 
 
-  <ion-list>
 
     <ion-list>
       <ion-item>
@@ -26,40 +25,52 @@
           
       
      
-    </ion-list>
+    
     <ion-item>
       <ion-label stacked>Customer ID</ion-label>
-      <ion-input (ngModel)="newMandate.CustomerId" type="text"></ion-input>
+      <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="32545243775"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label floating>User ID</ion-label>
-      <ion-input type="text" disabled="true"></ion-input>
+      <ion-label stacked>User ID</ion-label>
+      <ion-input *ngIf="newMandate.serviceProviderName" type="text" value="{{myUser.userId}}"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label floating>Bank</ion-label>
-      <ion-input type="text" disabled="true"></ion-input>
+        <ion-label stacked>Bank</ion-label>
+        <!-- <ion-select [(ngModel)]="newAccount.bankName">
+          <ion-option *ngFor="let bank of banks" [value]="bank.name">{{bank.name}}</ion-option>
+        </ion-select> -->
+        <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="Barclays"></ion-input>
+      </ion-item>
+    <ion-item>
+      <ion-label stacked>Branch</ion-label>
+      <ion-input  *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="02B"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label floating>Branch</ion-label>
-      <ion-input type="text" disabled="true"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Account</ion-label>
-      <ion-input type="text" disabled="true"></ion-input>
-    </ion-item>
-
-    <p>
-      Add Restrictions:
-    </p>
-
-    <ion-item>
-      <ion-label floating>Amount</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label stacked>Account</ion-label>
+      <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="20474290124893" ></ion-input>
     </ion-item>
 
-
+    <ion-list-header>
+       Add Restrictions
+      </ion-list-header>
 
     <ion-item>
+      <ion-label stacked>Max amount</ion-label>
+      <ion-input type="text" (ngModel)="newMandate.paymentDetail.paymentAmount"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label stacked>Always send notification</ion-label>
+        <ion-toggle color="royal" checked="false"></ion-toggle>
+      </ion-item>
+      <ion-item>
+          <ion-label stacked>Always ask for my approvel </ion-label>
+          <ion-toggle color="royal" checked="false"></ion-toggle>
+        </ion-item>
+
+
+
+    <!-- <ion-item>
       <ion-label>Date</ion-label>
       <ion-select [(ngModel)]="month">
         <ion-option value="01">January</ion-option>
@@ -81,10 +92,10 @@
         <ion-option>2020</ion-option>
         <ion-option>2021</ion-option>
         <!-->
-        <ion-option checked="true">2018</ion-option>
+        <!-- <ion-option checked="true">2018</ion-option> -->
         <!-->
       </ion-select>
-    </ion-item>
+    </ion-item> -->
 
     <button ion-button small (click)="goToAuthentication()">Submit</button>
 
