@@ -5,6 +5,7 @@ import { LoadingController } from 'ionic-angular';
 import {UserDetails} from '../../classes/UserDetails';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { AlertController } from 'ionic-angular';
 
 
 @Component({
@@ -14,9 +15,44 @@ import 'rxjs/add/operator/map';
 export class RegisterPage {
   user:UserDetails = new UserDetails();
 
-  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public http: Http) {
+  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public http: Http, public alerCtrl: AlertController) {
   }
 
+
+  goToSignIn(){
+    let alert = this.alerCtrl.create({
+      title: 'Debit Alert from Myndate',
+      message: 'T-Mobile has requested to charge your Barclays bank account for 39 EURO. This amount exceeds the amout limit you defined (29EURO)',
+      buttons: [
+        {
+          text: 'Approve',
+          handler: () => {
+            console.log('Disagree clicked');
+            this.navCtrl.push(MandateManagePage);
+          }
+        },
+        {
+          text: 'Hold',
+          handler: () => {
+            console.log('Disagree clicked');
+            this.navCtrl.push(MandateManagePage);
+          }
+        },
+        {
+          text: 'Reject',
+          handler: () => {
+            console.log('Disagree clicked');
+            this.navCtrl.push(MandateManagePage);
+          }
+        }
+      ]
+    });
+    alert.present()
+  }
+
+
+
+  /*
 
   goToAuthentication(){
     // let loader = this.loadingCtrl.create({
@@ -39,7 +75,7 @@ export class RegisterPage {
 
 
     this.navCtrl.push(AuthenticationPage);
-  }
+  }*/
 
  
 
