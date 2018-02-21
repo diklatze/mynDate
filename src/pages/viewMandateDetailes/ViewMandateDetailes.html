@@ -11,7 +11,7 @@
 
   <ion-card>
 
-      <input id="image" type="image" width="110" height="50" (click)="goToMandateContruct()" src="{{myMandate.imagePath}}">
+      <input id="image" type="image" width="110" height="50"  src="{{myMandate.imagePath}}">
     <!-->   <button id="close" class="closing" onClick="goToMandateContruct()"><img src="{{myMandate.imagePath}}" /></button><!-->
  <!-->   <img src="{{myMandate.imagePath}}" height="100" width="30"><!-->
 
@@ -19,7 +19,7 @@
 
     <ion-card-content>
       <div class="row">
-        <div class="col">Date</div>
+        <div class="col">Date Of Charge</div>
       <!-->  <div class="col col-offset-5"></div> <!-->
         <div class="col">Amount</div>
       </div>  
@@ -31,7 +31,8 @@
         </div>  
       </div>
 
-
+      <button ion-button clear item-end style="text-transform: none;" (click)="goToMandateContruct()"><u>View Mandate Details</u> </button>
     </ion-card-content>
+    
   </ion-card>
 </ion-content>

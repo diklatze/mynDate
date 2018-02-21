@@ -57,7 +57,7 @@ export class HomePage {
 
     let alert = this.alerCtrl.create({
       title: 'Hello, John Lennon',
-      message: 'Welcome back to myndate Ready to start?',
+      message: 'Welcome back to Myndate. Ready to start?',
       buttons: [
         {
           text: 'OK',

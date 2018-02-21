@@ -9,55 +9,55 @@ import {BusinessComp} from './BusinessComp';
 
 export const restrictions: Restrictions = { notifyMoreThanUsual: true, notifyOnPayment: true };
 export const PaymentDetailDemo: PaymentDetail[] = [
-    {paymentAmount: "€ 320",paymentDate: "18/02/22" },
+    {paymentAmount: "€320",paymentDate: "18/02/22" },
 
 ];
 export const PaymentDetail1: PaymentDetail[] = [
-    {paymentAmount: "€ 456.37",paymentDate: "17/09/01" },
-    {paymentAmount: "€ 479.37",paymentDate: "17/08/01" },
-    {paymentAmount: "€ 489.37",paymentDate: "17/07/01" },
-    {paymentAmount: "€ 438.00",paymentDate: "17/06/01" },
-    {paymentAmount: "€ 489.00",paymentDate: "17/05/01" },
-    {paymentAmount: "€ 450.00",paymentDate: "17/04/01" },
-    {paymentAmount: "€ 400.97",paymentDate: "17/03/01" },
-    {paymentAmount: "€ 421.99",paymentDate: "17/02/01" },
-    {paymentAmount: "€ 498.67",paymentDate: "17/01/01" }
+    {paymentAmount: "€456.37",paymentDate: "17/09/01" },
+    {paymentAmount: "€479.37",paymentDate: "17/08/01" },
+    {paymentAmount: "€489.37",paymentDate: "17/07/01" },
+    {paymentAmount: "€438.00",paymentDate: "17/06/01" },
+    {paymentAmount: "€489.00",paymentDate: "17/05/01" },
+    {paymentAmount: "€450.00",paymentDate: "17/04/01" },
+    {paymentAmount: "€400.97",paymentDate: "17/03/01" },
+    {paymentAmount: "€421.99",paymentDate: "17/02/01" },
+    {paymentAmount: "€498.67",paymentDate: "17/01/01" }
 
 ];
 export const PaymentDetail2: PaymentDetail[] = [
-    {paymentAmount: "€ 1000.37",paymentDate: "17/09/05" },
-    {paymentAmount: "€ 1239.37",paymentDate: "17/08/05" },
-    {paymentAmount: "€ 1489.37",paymentDate: "17/07/05" },
-    {paymentAmount: "€ 1111.00",paymentDate: "17/06/05" },
-    {paymentAmount: "€ 1322.00",paymentDate: "17/05/05" },
-    {paymentAmount: "€ 1000.00",paymentDate: "17/04/05" },
-    {paymentAmount: "€ 1023.97",paymentDate: "17/03/05" },
-    {paymentAmount: "€ 986.99",paymentDate:  "17/02/05" },
-    {paymentAmount: "€ 1212.67",paymentDate: "17/01/05" }
+    {paymentAmount: "€1000.37",paymentDate: "17/09/05" },
+    {paymentAmount: "€1239.37",paymentDate: "17/08/05" },
+    {paymentAmount: "€1489.37",paymentDate: "17/07/05" },
+    {paymentAmount: "€1111.00",paymentDate: "17/06/05" },
+    {paymentAmount: "€1322.00",paymentDate: "17/05/05" },
+    {paymentAmount: "€1000.00",paymentDate: "17/04/05" },
+    {paymentAmount: "€1023.97",paymentDate: "17/03/05" },
+    {paymentAmount: "€986.99",paymentDate:  "17/02/05" },
+    {paymentAmount: "€1212.67",paymentDate: "17/01/05" }
 
 ];
 export const PaymentDetail3: PaymentDetail[] = [
-    {paymentAmount: "€ 123.37",paymentDate: "17/09/10" },
-    {paymentAmount: "€ 111.37",paymentDate: "17/08/10" },
-    {paymentAmount: "€ 102.37",paymentDate: "17/07/10" },
-    {paymentAmount: "€ 98.00",paymentDate:  "17/06/10" },
-    {paymentAmount: "€ 111.00",paymentDate: "17/05/10" },
-    {paymentAmount: "€ 109.00",paymentDate: "17/04/10" },
-    {paymentAmount: "€ 109.97",paymentDate: "17/03/10" },
-    {paymentAmount: "€ 111.99",paymentDate: "17/02/10" },
-    {paymentAmount: "€ 99.67",paymentDate:  "17/01/10" }
+    {paymentAmount: "€123.37",paymentDate: "17/09/10" },
+    {paymentAmount: "€111.37",paymentDate: "17/08/10" },
+    {paymentAmount: "€102.37",paymentDate: "17/07/10" },
+    {paymentAmount: "€98.00",paymentDate:  "17/06/10" },
+    {paymentAmount: "€111.00",paymentDate: "17/05/10" },
+    {paymentAmount: "€109.00",paymentDate: "17/04/10" },
+    {paymentAmount: "€109.97",paymentDate: "17/03/10" },
+    {paymentAmount: "€111.99",paymentDate: "17/02/10" },
+    {paymentAmount: "€99.67",paymentDate:  "17/01/10" }
 
 ];
 export const PaymentDetail4: PaymentDetail[] = [
-    {paymentAmount: "€ 540.00",paymentDate: "16/09/01" },
-    {paymentAmount: "€ 540.00",paymentDate: "16/08/01" },
-    {paymentAmount: "€ 540.00",paymentDate: "16/07/01" },
-    {paymentAmount: "€ 540.00",paymentDate: "16/06/01" },
-    {paymentAmount: "€ 540.00",paymentDate: "16/05/01" },
-    {paymentAmount: "€ 540.00",paymentDate: "16/04/01" },
-    {paymentAmount: "€ 540.00",paymentDate: "16/03/01" },
-    {paymentAmount: "€ 540.00",paymentDate: "16/02/01" },
-    {paymentAmount: "€ 540.00",paymentDate: "16/01/01" }
+    {paymentAmount: "€540.00",paymentDate: "16/09/01" },
+    {paymentAmount: "€540.00",paymentDate: "16/08/01" },
+    {paymentAmount: "€540.00",paymentDate: "16/07/01" },
+    {paymentAmount: "€540.00",paymentDate: "16/06/01" },
+    {paymentAmount: "€540.00",paymentDate: "16/05/01" },
+    {paymentAmount: "€540.00",paymentDate: "16/04/01" },
+    {paymentAmount: "€540.00",paymentDate: "16/03/01" },
+    {paymentAmount: "€540.00",paymentDate: "16/02/01" },
+    {paymentAmount: "€540.00",paymentDate: "16/01/01" }
 
 ];
 export const MANDETES1: Mandate[] = [
