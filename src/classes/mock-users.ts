@@ -5,30 +5,31 @@ import { Mandate } from './Mandate';
 
 export const restrictions: Restrictions = { notifyMoreThanUsual: true, notifyOnPayment: true };
 
-export const MANDETES: Mandate[] = [
+export const MANDETES1: Mandate[] = [
     { CustomerId: "32545243445", userId: "123456789", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Allianze-insurance.png",initDate:"11/31/17" }, 
-    { CustomerId: "32545243445", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Direct Énergie.png" }, 
-    { CustomerId: "1234555555", userId: "208056789", serviceProviderName: "Virgin Media", serviceProviderArea: "TV/Phone/Cell bundle provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/virgin_media-bundle_internet_phone_tv.png" }, 
-    { CustomerId: "6621243445", userId: "046259735", serviceProviderName: "British Gas", serviceProviderArea: "Electric company", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/british_gas.png" }, 
-    // { CustomerId: "5487989898", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Cellphone provider", restrictions: restrictions ,imagePath:".\assets\images\companyLogos\O2_cellphone.png"}, 
-    // { CustomerId: "32545243445", userId: "208056789", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:".\assets\images\companyLogos\Allianze-insurance.png"}, 
-    // { CustomerId: "32545243445", userId: "30897459", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:".\assets\images\companyLogos\Allianze-insurance.png" }, 
-    // { CustomerId: "32545243445", userId: "126987745", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:".\assets\images\companyLogos\Allianze-insurance.png" }, 
-    // { CustomerId: "32545243445", userId: "3069724498", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:".\assets\images\companyLogos\Allianze-insurance.png" }, 
-    // { CustomerId: "32545243775", userId: "30897459", serviceProviderName: "Direct Énergie", serviceProviderArea: "Electric company", restrictions: restrictions,imagePath:".\assets\images\companyLogos\Direct Énergie.png" }, 
-    // { CustomerId: "6621243445", userId: "126987745", serviceProviderName: "British Gas", serviceProviderArea: "Electric company", restrictions: restrictions,imagePath:".\assets\images\companyLogos\british_gas.png" },
-    // { CustomerId: "5487989898", userId: "123456789", serviceProviderName: "O2", serviceProviderArea: "Cellphone provider", restrictions: restrictions,imagePath:".\assets\images\companyLogos\O2_cellphone.png"},
-    // {CustomerId: "1234555555", userId: "123456789", serviceProviderName: "Virgin Media", serviceProviderArea: "TV/Phone/Cell bundle provider", restrictions: restrictions,imagePath:".\assets\images\companyLogos\virgin_media-bundle_internet_phone_tv.png" }
+    { CustomerId: "32545243445", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Cellphone provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/O2_cellphone.png",initDate:"11/31/17" }, 
+    { CustomerId: "1234555555", userId: "208056789", serviceProviderName: "Virgin Media", serviceProviderArea: "TV/Phone/Cell bundle provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/virgin_media-bundle_internet_phone_tv.png" ,initDate:"11/31/17"}, 
+    { CustomerId: "6621243445", userId: "046259735", serviceProviderName: "British Gas", serviceProviderArea: "Electric company", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/british_gas.png" ,initDate:"1/1/17"}, 
+];
+
+export const MANDETES2: Mandate[] = [
+  { CustomerId: "32545243775", userId: "30897459", serviceProviderName: "Direct Énergie", serviceProviderArea: "Electric company", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Direct Énergie.png",initDate:"12/20/16" }, 
+    { CustomerId: "6621243445", userId: "126987745", serviceProviderName: "Endesa", serviceProviderArea: "Electric company", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Endesa.png",initDate:"12/20/16" },
+    { CustomerId: "5487989898", userId: "123456789", serviceProviderName: "Vodafone", serviceProviderArea: "Cellphone provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/vodafone.png",initDate:"12/24/16"}
 
 ];
+export const MANDETES3: Mandate[] = [
+     { CustomerId: "5487989898", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Cellphone provider", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/O2_cellphone.png",initDate:"12/20/16"}, 
+      { CustomerId: "32545243445", userId: "208056789", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Allianze-insurance.png",initDate:"12/20/16"}
+
+];
+
+
+
 export const ACCOUNTS: Account[] = [
-    { bankName: "Barclays", accountNum: "20474290124893", branchName: "02B",mandates:MANDETES,imagePath:".\assets\images\bankLogos\barclays.png" },
-    { bankName: "HSBC", accountNum: "20445454124893", branchName: "151",mandates:MANDETES , imagePath:".\assets\images\bankLogos\hsbc.png"},
-    { bankName: "HSBC", accountNum: "2047426541893", branchName: "0CD",mandates:MANDETES , imagePath:".\assets\images\bankLogos\hsbc.png"},
-    { bankName: "SWED", accountNum: "20474244444893", branchName: "DEQ",mandates:MANDETES, imagePath:".\assets\images\bankLogos\swedbank.png" },
-    { bankName: "BOI", accountNum: "20474233333893", branchName: "NEG",mandates:MANDETES , imagePath:".\assets\images\bankLogos\BOI.png"},
-    { bankName: "SWED", accountNum: "204742128744893", branchName: "B2R",mandates:MANDETES, imagePath:".\assets\images\bankLogos\swedbank.png" },
-    { bankName: "Barclays", accountNum: "20197224893", branchName: "02B",mandates:MANDETES, imagePath:".\assets\images\bankLogos\barclays.png"}
+    { bankName: "Barclays", accountNum: "20474290124893", branchName: "02B",mandates:MANDETES1,imagePath:"./assets/images/bankLogos/barclays.png" },
+    { bankName: "HSBC", accountNum: "40010131446495", branchName: "151",mandates:MANDETES2 , imagePath:"./assets/images/bankLogos/hsbc.png"},
+   { bankName: "SWED", accountNum: "01670010", branchName: "DEQ",mandates:MANDETES3, imagePath:"./assets/images/bankLogos/swedbank.png" }
 
 ];
 
