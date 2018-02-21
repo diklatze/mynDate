@@ -18,8 +18,7 @@ import {viewMandateDetailesPage} from '../pages/viewMandateDetailes/viewMandateD
 import { MandateCard } from '../components/mandateCard/mandateCard';
 import { MandateSegmant } from '../components/mandateSegmant/mandateSegmant';
 import { PopoverPage } from '../pages/mandateManage/mandateManage';
-
-
+import {ViewMandateContructPage} from '../pages/viewMandateContruct/viewMandateContruct';
 
 @NgModule({
   declarations: [
@@ -36,7 +35,8 @@ import { PopoverPage } from '../pages/mandateManage/mandateManage';
     MandateSegmant,
     MandateManagePage,
     AddMandatePage,
-    viewMandateDetailesPage
+    viewMandateDetailesPage,
+    ViewMandateContructPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +56,8 @@ import { PopoverPage } from '../pages/mandateManage/mandateManage';
     SignInPage,
     MandateManagePage,
     AddMandatePage,
-    viewMandateDetailesPage
+    viewMandateDetailesPage,
+    ViewMandateContructPage
   ],
   providers: [
     StatusBar,

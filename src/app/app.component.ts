@@ -12,7 +12,8 @@ import { AuthenticationSuccessPage } from '../pages/authenticationSucess/authent
 import {AddAccountPage} from '../pages/addAccount/addAcount';
 import {MandateManagePage} from '../pages/mandateManage/mandateManage';
 import {AddMandatePage} from '../pages/addMandate/addMandate';
-import {viewMandateDetailesPage} from '../pages/viewMandateDetailes/viewMandateDetailes'
+import {viewMandateDetailesPage} from '../pages/viewMandateDetailes/viewMandateDetailes';
+import {ViewMandateContructPage} from '../pages/viewMandateContruct/viewMandateContruct';
 
 
 @Component({
