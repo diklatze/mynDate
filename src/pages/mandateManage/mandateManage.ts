@@ -11,59 +11,29 @@ import { viewMandateDetailesPage } from '../viewMandateDetailes/viewMandateDetai
 import { USERS } from '../../classes/mock-users'
 
 
+
+
 @Component({
   template: `
-    <ion-list radio-group [(ngModel)]="fontFamily"  class="popover-page">
-      <ion-row>
-        <ion-col>
-          <button  ion-item detail-none class="text-button text-smaller">A</button>
-        </ion-col>
-        <ion-col>
-          <button  ion-item detail-none class="text-button text-larger">A</button>
-        </ion-col>
-      </ion-row>
-      <ion-row class="row-dots">
-        <ion-col>
-          <button ion-button="dot"  class="dot-white" [class.selected]="background == 'white'"></button>
-        </ion-col>
-        <ion-col>
-          <button ion-button="dot"  class="dot-tan" [class.selected]="background == 'tan'"></button>
-        </ion-col>
-        <ion-col>
-          <button ion-button="dot"  class="dot-grey" [class.selected]="background == 'grey'"></button>
-        </ion-col>
-        <ion-col>
-          <button ion-button="dot"  class="dot-black" [class.selected]="background == 'black'"></button>
-        </ion-col>
-      </ion-row>
-      <ion-item class="text-athelas">
-        <ion-label>Athelas</ion-label>
-        <ion-radio value="Athelas"></ion-radio>
+    <ion-list class="popover-page">
+    <ion-item>
+    <ion-icon name="add" item-start></ion-icon>
+      Add New Mandate
       </ion-item>
-      <ion-item class="text-charter">
-        <ion-label>Charter</ion-label>
-        <ion-radio value="Charter"></ion-radio>
-      </ion-item>
-      <ion-item class="text-iowan">
-        <ion-label>Iowan</ion-label>
-        <ion-radio value="Iowan"></ion-radio>
-      </ion-item>
-      <ion-item class="text-palatino">
-        <ion-label>Palatino</ion-label>
-        <ion-radio value="Palatino"></ion-radio>
-      </ion-item>
-      <ion-item class="text-san-francisco">
-        <ion-label>San Francisco</ion-label>
-        <ion-radio value="San Francisco"></ion-radio>
-      </ion-item>
-      <ion-item class="text-seravek">
-        <ion-label>Seravek</ion-label>
-        <ion-radio value="Seravek"></ion-radio>
-      </ion-item>
-      <ion-item class="text-times-new-roman">
-        <ion-label>Times New Roman</ion-label>
-        <ion-radio value="Times New Roman"></ion-radio>
-      </ion-item>
+      <ion-item>
+      <ion-icon name="add" item-start></ion-icon>
+        Add New Mandate
+        </ion-item>
+        <ion-item>
+        <ion-icon name="add" item-start></ion-icon>
+          Add New Mandate
+          </ion-item>
+          <ion-item>
+          <ion-icon name="add" item-start></ion-icon>
+          <button ion-button clear item-start (click)="goToAddMandate()">Add New Mandate</button>
+            </ion-item>
+     
+   
     </ion-list>
   `
 })
@@ -92,8 +62,11 @@ export class PopoverPage {
     },
   };
 
-  constructor(private navParams: NavParams) {
+  constructor(private navParams: NavParams,private navCtrl: NavController) {
 
+  }
+  goToAddMandate(){
+    this.navCtrl.push(AddMandatePage);
   }
 
   ngOnInit() {
@@ -101,44 +74,12 @@ export class PopoverPage {
       this.contentEle = this.navParams.data.contentEle;
       this.textEle = this.navParams.data.textEle;
 
-      // this.background = this.getColorName(this.contentEle.style.backgroundColor);
-      // this.setFontFamily();
+      
     }
   }
 
-  // getColorName(background) {
-  //   let colorName = 'white';
-
-  //   if (!background) return 'white';
-
-  //   for (var key in this.colors) {
-  //     if (this.colors[key].bg == background) {
-  //       colorName = key;
-  //     }
-  //   }
-
-  //   return colorName;
-  // }
-
-  // setFontFamily() {
-  //   if (this.textEle.style.fontFamily) {
-  //     this.fontFamily = this.textEle.style.fontFamily.replace(/'/g, "");
-  //   }
-  // }
-
-  // changeBackground(color) {
-  //   this.background = color;
-  //   this.contentEle.style.backgroundColor = this.colors[color].bg;
-  //   this.textEle.style.color = this.colors[color].fg;
-  // }
-
-  // changeFontSize(direction) {
-  //   this.textEle.style.fontSize = direction;
-  // }
-
-  // changeFontFamily() {
-  //   if (this.fontFamily) this.textEle.style.fontFamily = this.fontFamily;
-  // }
+  
+  
 }
 
 
@@ -150,8 +91,12 @@ export class MandateManagePage {
   // @ViewChild('popoverText', { read: ElementRef }) text: ElementRef;
   users = USERS;
   myuser = this.users[1];
-  constructor(private popoverCtrl: PopoverController) {
+  constructor(public navCtrl: NavController,private popoverCtrl: PopoverController) {
 
+  }
+
+  goToAddMandate(){
+    this.navCtrl.push(AddMandatePage);
   }
 
   presentPopover(ev) {
