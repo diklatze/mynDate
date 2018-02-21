@@ -17,6 +17,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {viewMandateDetailesPage} from '../pages/viewMandateDetailes/viewMandateDetailes';
 import { MandateCard } from '../components/mandateCard/mandateCard';
 import { MandateSegmant } from '../components/mandateSegmant/mandateSegmant';
+import { PopoverPage } from '../pages/mandateManage/mandateManage';
+
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { MandateSegmant } from '../components/mandateSegmant/mandateSegmant';
     MyApp,
     HomePage,
     ListPage,
+    PopoverPage,
     RegisterPage,
     AuthenticationPage,
     AuthenticationSuccessPage,
@@ -44,6 +47,7 @@ import { MandateSegmant } from '../components/mandateSegmant/mandateSegmant';
   entryComponents: [
     MyApp,
     HomePage,
+    PopoverPage,
     ListPage,
     RegisterPage,
     AuthenticationPage,

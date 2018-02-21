@@ -1,25 +1,15 @@
-<!-- <ion-header>
-  <ion-navbar>
-    <ion-title>
-      <h5>Myndate Manage</h5>
-    </ion-title>
-
-  </ion-navbar>
-
-</ion-header> -->
-
 <ion-header>
-    <ion-navbar>
-      <ion-title>Myndate Manage</ion-title>
-      <ion-buttons end>
-        <button ion-button icon-only (click)="presentPopover($event)">
-          <ion-icon name="more"></ion-icon>
-        </button>
-      </ion-buttons>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <ion-title>Myndate Manage</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
 
-  <ion-content #popoverContent padding class="popover-page">
+<ion-content #popoverContent padding class="popover-page">
 
 
   <ion-slides pager>
@@ -29,21 +19,7 @@
     </ion-slide>
 
 
-    <!-->
-    <ion-slide>
-      <ion-card>
-        <img src="./assets/images/Myndate.png" />
-        <ion-card-content>
-          <p>
-            Account Number 3 presents all the mandates ascribes to this account
-          </p>
-          <p>
-            <button ion-button small (click)="goToAddMandate()" style="text-transform: none;">Add Mandate</button>
-          </p>
-        </ion-card-content>
-      </ion-card>
-    </ion-slide>
-    <!-->
+
   </ion-slides>
 
 
