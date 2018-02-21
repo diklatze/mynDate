@@ -2,8 +2,11 @@
 
   <ion-card-content> -->
 
+    <img src= "{{account.imagePath}}" height="40" width="40">
+    <ion-title><h4>Branch: {{account.branchName}}</h4></ion-title>
+    <ion-title><h4>Account: {{account.accountNum}}</h4></ion-title>
 
-    <ion-list-header>Account Num: {{account.accountNum}}</ion-list-header>
+ <!--   <ion-list-header>Account: {{account.accountNum}}</ion-list-header><!-->
 
     <ion-list>
       <ion-item *ngFor="let mandate of account.mandates">

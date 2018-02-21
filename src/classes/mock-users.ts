@@ -28,8 +28,8 @@ export const MANDETES3: Mandate[] = [
 
 export const ACCOUNTS: Account[] = [
     { bankName: "Barclays", accountNum: "20474290124893", branchName: "02B",mandates:MANDETES1,imagePath:"./assets/images/bankLogos/barclays.png" },
-    { bankName: "HSBC", accountNum: "40010131446495", branchName: "151",mandates:MANDETES2 , imagePath:"./assets/images/bankLogos/hsbc.png"},
-   { bankName: "SWED", accountNum: "01670010", branchName: "DEQ",mandates:MANDETES3, imagePath:"./assets/images/bankLogos/swedbank.png" }
+    { bankName: "HSBC", accountNum: "40010131446495", branchName: "69B",mandates:MANDETES2 , imagePath:"./assets/images/bankLogos/hsbc.png"},
+   { bankName: "SWED", accountNum: "01670010", branchName: "IBF",mandates:MANDETES3, imagePath:"./assets/images/bankLogos/swedbank.png" }
 
 ];
 
