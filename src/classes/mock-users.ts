@@ -68,7 +68,7 @@ export const MANDETES2: Mandate[] = [
 
 ];
 export const MANDETES3: Mandate[] = [
-     { CustomerId: "5487989898", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Cellphone provider", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/O2_cellphone.png",initDate:"12/20/16",paymentDetail:PaymentDetail2}, 
+     { CustomerId: "5487989898", userId: "046259735", serviceProviderName: "Tesco", serviceProviderArea: "Cellphone provider", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/tesco.png",initDate:"12/20/16",paymentDetail:PaymentDetail2}, 
       { CustomerId: "32545243445", userId: "208056789", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Allianze-insurance.png",initDate:"12/20/16", paymentDetail:PaymentDetail3}
 
 ];
