@@ -55,21 +55,21 @@ export const PaymentDetail4: PaymentDetail[] = [
 
 ];
 export const MANDETES1: Mandate[] = [
-    { CustomerId: "32545243445", userId: "123456789", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Allianze-insurance.png",initDate:"11/31/17",paymentDetail:PaymentDetail4 }, 
-    { CustomerId: "32545243445", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Cellphone provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/O2_cellphone.png",initDate:"11/31/17",paymentDetail:PaymentDetail3 }, 
-    { CustomerId: "1234555555", userId: "208056789", serviceProviderName: "Virgin Media", serviceProviderArea: "TV/Phone/Cell bundle provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/virgin_media-bundle_internet_phone_tv.png" ,initDate:"11/31/17",paymentDetail:PaymentDetail2}, 
-    { CustomerId: "6621243445", userId: "046259735", serviceProviderName: "British Gas", serviceProviderArea: "Electric company", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/british_gas.png" ,initDate:"1/1/17",paymentDetail:PaymentDetail1}, 
+    { CustomerId: "32545243445", userId: "123456789", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Allianze-insurance.png",initDate:"17/11/31",paymentDetail:PaymentDetail4 }, 
+    { CustomerId: "32545243445", userId: "046259735", serviceProviderName: "O2", serviceProviderArea: "Cellphone provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/O2_cellphone.png",initDate:"17/11/31",paymentDetail:PaymentDetail3 }, 
+    { CustomerId: "1234555555", userId: "208056789", serviceProviderName: "Virgin Media", serviceProviderArea: "TV/Phone/Cell bundle provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/virgin_media-bundle_internet_phone_tv.png" ,initDate:"17/11/31",paymentDetail:PaymentDetail2}, 
+    { CustomerId: "6621243445", userId: "046259735", serviceProviderName: "British Gas", serviceProviderArea: "Electric company", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/british_gas.png" ,initDate:"17/1/1",paymentDetail:PaymentDetail1}, 
 ];
 
 export const MANDETES2: Mandate[] = [
-  { CustomerId: "32545243775", userId: "30897459", serviceProviderName: "Direct Énergie", serviceProviderArea: "Electric company", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Direct Énergie.png",initDate:"12/20/16",paymentDetail:PaymentDetail1 }, 
-    { CustomerId: "6621243445", userId: "126987745", serviceProviderName: "Endesa", serviceProviderArea: "Electric company", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Endesa.png",initDate:"12/20/16" ,paymentDetail:PaymentDetail2},
-    { CustomerId: "5487989898", userId: "123456789", serviceProviderName: "Vodafone", serviceProviderArea: "Cellphone provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/vodafone.png",initDate:"12/24/16",paymentDetail:PaymentDetail3}
+  { CustomerId: "32545243775", userId: "30897459", serviceProviderName: "Direct Énergie", serviceProviderArea: "Electric company", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Direct Énergie.png",initDate:"16/12/20",paymentDetail:PaymentDetail1 }, 
+    { CustomerId: "6621243445", userId: "126987745", serviceProviderName: "Endesa", serviceProviderArea: "Electric company", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Endesa.png",initDate:"16/12/20" ,paymentDetail:PaymentDetail2},
+    { CustomerId: "5487989898", userId: "123456789", serviceProviderName: "Vodafone", serviceProviderArea: "Cellphone provider", restrictions: restrictions,imagePath:"./assets/images/companyLogos/vodafone.png",initDate:"16/12/24",paymentDetail:PaymentDetail3}
 
 ];
 export const MANDETES3: Mandate[] = [
-     { CustomerId: "5487989898", userId: "046259735", serviceProviderName: "Tesco", serviceProviderArea: "Cellphone provider", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/tesco.png",initDate:"12/20/16",paymentDetail:PaymentDetail2}, 
-      { CustomerId: "32545243445", userId: "208056789", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Allianze-insurance.png",initDate:"12/20/16", paymentDetail:PaymentDetail3}
+     { CustomerId: "5487989898", userId: "046259735", serviceProviderName: "Tesco", serviceProviderArea: "Cellphone provider", restrictions: restrictions ,imagePath:"./assets/images/companyLogos/tesco.png",initDate:"16/12/20",paymentDetail:PaymentDetail2}, 
+      { CustomerId: "32545243445", userId: "208056789", serviceProviderName: "Allianz", serviceProviderArea: "Insurance", restrictions: restrictions,imagePath:"./assets/images/companyLogos/Allianze-insurance.png",initDate:"16/12/20", paymentDetail:PaymentDetail3}
 
 ];
 
