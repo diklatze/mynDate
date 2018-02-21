@@ -30,6 +30,7 @@ export class viewMandateDetailesPage {
 
   goToMandateContruct()
   {
+    {{hello}};
     this.navCtrl.push(ViewMandateContructPage);
   };
 
