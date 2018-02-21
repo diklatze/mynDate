@@ -1,25 +1,35 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
     <ion-title>
       <h5>Myndate Manage</h5>
     </ion-title>
 
   </ion-navbar>
 
-</ion-header>
+</ion-header> -->
 
-<ion-content padding>
+<ion-header>
+    <ion-navbar>
+      <ion-title>Myndate Manage</ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="presentPopover($event)">
+          <ion-icon name="more"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content #popoverContent padding class="popover-page">
 
 
   <ion-slides pager>
 
-<ion-slide *ngFor="let account of myuser.accounts"> <mandate-card [account]="account"></mandate-card></ion-slide>
-   
-   
-<!-->
+    <ion-slide *ngFor="let account of myuser.accounts">
+      <mandate-card [account]="account"></mandate-card>
+    </ion-slide>
+
+
+    <!-->
     <ion-slide>
       <ion-card>
         <img src="./assets/images/Myndate.png" />
@@ -33,7 +43,7 @@
         </ion-card-content>
       </ion-card>
     </ion-slide>
-<!-->
+    <!-->
   </ion-slides>
 
 

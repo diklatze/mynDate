@@ -39,7 +39,7 @@ export const PaymentDetail3: PaymentDetail[] = [
     {paymentAmount: "109.00 EUR",paymentDate: "17/06/10" },
     {paymentAmount: "109.97 EUR",paymentDate: "17/07/10" },
     {paymentAmount: "111.99 EUR",paymentDate: "17/08/10" },
-    {paymentAmount: "99.67 EUR",paymentDate: "17/09/10" }
+    {paymentAmount: "99.67 EUR",paymentDate:  "17/09/10" }
 
 ];
 export const PaymentDetail4: PaymentDetail[] = [
