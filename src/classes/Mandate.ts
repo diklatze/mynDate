@@ -1,4 +1,5 @@
 import { Restrictions } from './Restrictions';
+import {PaymentDetail } from './PaymentDetail';
 
 
 export class Mandate {
@@ -10,5 +11,7 @@ export class Mandate {
     imagePath ?: String;
     initDate? : String;
     expiredDate?:String;
+    paymentsDetails?: PaymentDetail[]; 
+
     
     }
