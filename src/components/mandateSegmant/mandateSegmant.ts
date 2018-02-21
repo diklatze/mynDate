@@ -26,7 +26,7 @@ export class MandateSegmant {
   }
 
   viewMandate(){
-    this.navCtrl.push(viewMandateDetailesPage,{ myMandate: this.mandate });
+    this.navCtrl.push(viewMandateDetailesPage);
   }
  
 

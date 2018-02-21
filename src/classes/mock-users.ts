@@ -52,9 +52,9 @@ export const USERS: UserDetails[] = [
 
 ];
 
-
+/*
 export const PaymentDetail1: PaymentDetail[] = [
     {},
     {},
     {},
-];
+];*/
