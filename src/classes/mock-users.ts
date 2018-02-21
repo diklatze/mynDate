@@ -2,6 +2,7 @@ import { UserDetails } from './UserDetails';
 import { Account } from './Account';
 import { Restrictions } from './Restrictions';
 import { Mandate } from './Mandate';
+import { PaymentDetail } from './PaymentDetail';
 
 export const restrictions: Restrictions = { notifyMoreThanUsual: true, notifyOnPayment: true };
 
@@ -49,4 +50,11 @@ export const USERS: UserDetails[] = [
 
 
 
+];
+
+
+export const PaymentDetail1: PaymentDetail[] = [
+    {},
+    {},
+    {},
 ];
