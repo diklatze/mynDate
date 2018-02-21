@@ -19,7 +19,7 @@ import { Mandate } from '../../classes/Mandate';
 
 export class ViewMandateContructPage {
 
-  constructor(public navCtrl: NavController,private popoverCtrl: PopoverController) {
+  constructor(public navCtrl: NavController) {
 
   }
   }
