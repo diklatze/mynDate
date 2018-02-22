@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AuthenticationPage } from '../authentication/authentication';
 import { LoadingController } from 'ionic-angular';
-import {UserDetails} from '../../classes/UserDetails';
+import { UserDetails } from '../../classes/UserDetails';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { AlertController } from 'ionic-angular';
@@ -13,36 +13,35 @@ import { AlertController } from 'ionic-angular';
   templateUrl: 'register.html'
 })
 export class RegisterPage {
-  user:UserDetails = new UserDetails();
+  user: UserDetails = new UserDetails();
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public http: Http, public alerCtrl: AlertController) {
   }
 
 
-  goToSignIn(){
+  goToSignIn() {
     let alert = this.alerCtrl.create({
       title: 'Debit Alert from Myndate',
-      message: 'T-Mobile has requested to charge your Barclays bank account for 39 EURO. This amount exceeds the amout limit you defined (29EURO)',
+      message: 'T-Mobile has requested to charge your Barclays bank account for €39.00. This amount exceeds the amout limit you defined (€29.00)',
       buttons: [
         {
           text: 'Approve',
           handler: () => {
             console.log('Disagree clicked');
-            this.navCtrl.push(MandateManagePage);
+            //this.navCtrl.push(MandateManagePage);
           }
         },
         {
           text: 'Hold',
           handler: () => {
             console.log('Disagree clicked');
-            this.navCtrl.push(MandateManagePage);
+           // this.navCtrl.push(MandateManagePage);
           }
         },
         {
           text: 'Reject',
           handler: () => {
-            console.log('Disagree clicked');
-            this.navCtrl.push(MandateManagePage);
+          //  this.navCtrl.push(MandateManagePage);
           }
         }
       ]
@@ -77,6 +76,6 @@ export class RegisterPage {
     this.navCtrl.push(AuthenticationPage);
   }*/
 
- 
+
 
 }

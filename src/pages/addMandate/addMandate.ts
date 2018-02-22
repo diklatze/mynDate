@@ -48,7 +48,7 @@ export class AddMandatePage {
 
   submit(){
     this.restrictions = { notifyMoreThanUsual: true, notifyOnPayment: true };
-    this.paymentDetailDemo=[{paymentAmount: "€ 320",paymentDate: "18/02/22" }];
+    this.paymentDetailDemo=[{paymentAmount: "€320",paymentDate: "18/02/22" }];
     this.newMandate= { CustomerId: "6621243445", userId: "046259735", serviceProviderName: "T-Mobile", serviceProviderArea: "Electric company", restrictions: this.restrictions ,imagePath:"./assets/images/companyLogos/tmobile.jpg" ,initDate:"17/1/1",paymentDetail:this.paymentDetailDemo}
     MANDETES1.push(this.newMandate);
     let alert = this.alerCtrl.create({

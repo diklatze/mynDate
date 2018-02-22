@@ -56,12 +56,12 @@
       
       <ion-item>
           <ion-label stacked>Expiration Date</ion-label>
-          <ion-input  type="text"  value=""></ion-input>
+          <ion-datetime displayFormat="MMM DD YYYY" min="2018" max="2030-10-31"></ion-datetime>
         </ion-item> 
 
     <ion-item>
       <ion-label stacked>Max amount</ion-label>
-      <ion-input type="text" (ngModel)="newMandate.paymentDetail.paymentAmount"></ion-input>
+      <ion-input type="text" (ngModel)="newMandate.paymentDetail.paymentAmount" value="€"></ion-input>
     </ion-item>
 
     <ion-item>
