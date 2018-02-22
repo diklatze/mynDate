@@ -9,6 +9,8 @@ import { LoadingController } from 'ionic-angular';
 import { AddMandatePage } from '../addMandate/addMandate';
 import { viewMandateDetailesPage } from '../viewMandateDetailes/viewMandateDetailes'
 import { USERS } from '../../classes/mock-users'
+import { RegisterPage } from '../register/register';
+
 
 
 
@@ -38,7 +40,7 @@ import { USERS } from '../../classes/mock-users'
          </ion-item>
           <ion-item>
           <ion-icon name="log-out" item-start></ion-icon>
-          <button ion-button clear item-start (click)="goToTemp()">Sign out</button>    
+          <button ion-button clear item-start (click)="goToSignUp()">Sign out</button>    
             </ion-item>
     </ion-list>
   `
@@ -82,6 +84,12 @@ export class PopoverPage {
     this.navCtrl.pop();
 
 }  
+goToSignUp(){
+    
+ 
+   
+  this.navCtrl.push(RegisterPage);
+}
 
   ngOnInit() {
     if (this.navParams.data) {
@@ -113,6 +121,7 @@ export class MandateManagePage {
     this.navCtrl.push(AddMandatePage);
   }
 
+  
   
 
 presentPopover(ev) {
