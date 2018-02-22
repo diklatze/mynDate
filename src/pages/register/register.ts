@@ -10,7 +10,23 @@ import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-register',
-  templateUrl: 'register.html'
+  templateUrl: 'register.html',
+  
+  styles: [
+    `.buttoncss.alert-button{
+      color:#e74c3c !important;
+      font-size: 1px;
+      
+      }`,
+      
+      `.alertcss{
+      color:#e74c3c;
+      /Any other style you wish to apply/
+      }`
+  
+
+  ]
+  
 })
 export class RegisterPage {
   user: UserDetails = new UserDetails();
@@ -22,14 +38,17 @@ export class RegisterPage {
   goToSignIn() {
     let alert = this.alerCtrl.create({
       title: 'Debit Alert from Myndate',
-      message: 'T-Mobile has requested to charge your Barclays bank account for €39.00. This amount exceeds the amout limit you defined (€29.00)',
+      subTitle:'T-Mobile has requested to charge your Barclays bank account for €39.00. This amount exceeds the amout limit you defined (€29.00)',
+      // message: 'T-Mobile has requested to charge your Barclays bank account for €39.00. This amount exceeds the amout limit you defined (€29.00)',
       buttons: [
         {
           text: 'Approve',
+          
           handler: () => {
             console.log('Disagree clicked');
             //this.navCtrl.push(MandateManagePage);
-          }
+            },
+          cssClass:"buttoncss",
         },
         {
           text: 'Hold',
