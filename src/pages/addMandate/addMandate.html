@@ -14,50 +14,56 @@
 
 
 
-    
-    <ion-list>
+
+  <ion-list>
+    <p></p>
       <ion-item>
-        <ion-label stacked>Service Provider</ion-label>
-        <ion-select [(ngModel)]="newMandate.serviceProviderName">
-          <ion-option *ngFor="let provider of companys" [value]="provider.name">{{provider.name}}</ion-option>
-        </ion-select>
+          <ion-img width="80" height="80"  style="background: transparent !important;" *ngIf="newMandate.serviceProviderName" src="./assets/images/companyLogos/tmobile.jpg">
+              </ion-img>
       </ion-item>
-          
-      
-     
+    <ion-item>
+      <ion-label stacked>Service Provider</ion-label>
+      <ion-select [(ngModel)]="newMandate.serviceProviderName">
+        <ion-option *ngFor="let provider of companys" [value]="provider.name">
+          {{provider.name}}</ion-option>
+      </ion-select>
+    </ion-item>
+
     
     <ion-item>
       <ion-label stacked>Customer ID</ion-label>
-      <ion-input *ngIf="newMandate.serviceProviderName" type="text"  value=""></ion-input>
+      <ion-input *ngIf="newMandate.serviceProviderName" type="text" value=""></ion-input>
     </ion-item>
     <ion-item>
       <ion-label stacked>National ID</ion-label>
       <ion-input *ngIf="newMandate.serviceProviderName" type="text" value="{{myUser.userId}}"></ion-input>
     </ion-item>
     <ion-item>
-        <ion-label stacked>Bank</ion-label>
-        <!-- <ion-select [(ngModel)]="newAccount.bankName">
+      <ion-label stacked>Bank</ion-label>
+      <!-- <ion-select [(ngModel)]="newAccount.bankName">
           <ion-option *ngFor="let bank of banks" [value]="bank.name">{{bank.name}}</ion-option>
         </ion-select> -->
-        <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="Barclays"></ion-input>
-      </ion-item>
+      <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="Barclays"></ion-input>
+    </ion-item>
     <ion-item>
       <ion-label stacked>Branch</ion-label>
-      <ion-input  *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="02B"></ion-input>
+      <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="02B"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label stacked>Account</ion-label>
-      <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="20474290124893" ></ion-input>
+      <ion-input *ngIf="newMandate.serviceProviderName" type="text" readonly="true" value="20474290124893"></ion-input>
     </ion-item>
-    <button ion-button clear item-end style="text-transform: none;"><u>Read & Accept Contract Terms</u> </button>
+    <button ion-button clear item-end style="text-transform: none;">
+      <u>Read & Accept Contract Terms</u>
+    </button>
     <ion-list-header>
-       Add Restrictions
-      </ion-list-header>
-      
-      <ion-item>
-          <ion-label stacked>Expiration Date</ion-label>
-          <ion-datetime displayFormat="MMM DD YYYY" min="2018" max="2030-10-31"></ion-datetime>
-        </ion-item> 
+      Add Restrictions
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label stacked>Expiration Date</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" min="2018" max="2030-10-31"></ion-datetime>
+    </ion-item>
 
     <ion-item>
       <ion-label stacked>Max amount</ion-label>
@@ -65,13 +71,13 @@
     </ion-item>
 
     <ion-item>
-        <ion-label stacked>Always send notification</ion-label>
-        <ion-toggle color="royal" checked="false"></ion-toggle>
-      </ion-item>
-      <ion-item>
-          <ion-label stacked>Always ask for my approvel </ion-label>
-          <ion-toggle color="royal" checked="false"></ion-toggle>
-        </ion-item>
+      <ion-label stacked>Always send notification</ion-label>
+      <ion-toggle color="royal" checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Always ask for my approvel </ion-label>
+      <ion-toggle color="royal" checked="false"></ion-toggle>
+    </ion-item>
 
 
 
